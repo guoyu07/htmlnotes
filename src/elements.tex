@@ -1003,7 +1003,8 @@ The rectangular structure of a block element is often referred to as the box mod
 
 \begin{compactitem}
 \item The content of an element is the actual text (or other media) placed between the opening and closing tags of an element.
-\item The padding of an element is the space around that content, which still form part of said element. Padding is physically part of an element, and should not be used to create white space between two elements. Any background style assigned to the element, such as a background image or color, will be visible within the padding. \item Increasing the size of an element's padding increases the space this element will take up.
+\item The padding of an element is the space around that content, which still form part of said element. Padding is physically part of an element, and should not be used to create white space between two elements. Any background style assigned to the element, such as a background image or color, will be visible within the padding. 
+\item Increasing the size of an element's padding increases the space this element will take up.
 \item The border of an element is the absolute end of an element, and spans the circumference of that element. \item The thickness of a border increases the size of an element.
 \item The margin of an element is the white-space that surrounds an element. The content, padding and border of any other element will not be allowed to enter this area, unless forced to do so by some advanced CSS placement. Using most standard DTDs, margins on the left and right of different elements will push each other away. Margins on the top or bottom of an element, on the other hand, will not stack, or will inter mingle. This means that the white-space between these elements will be as big as the larger margin between them.
 \end{compactitem}
@@ -1018,19 +1019,19 @@ The above section refers only to the detailed implementation of CSS rendering an
 
 \subsubsection{<p>...</p>}
 
-Creates a paragraph, perhaps the most common block level element.
+Creates a paragraph, perhaps the most common block\footnote{注释：浏览器会自动地在段落的前后添加空行，因为<p> 是块级元素。} level element.
 
 P existed in HTML Tags, and was standardized in HTML 2.0; still current.
 
-HTML 段落是通过 <p> 标签进行定义的，从而可以把 HTML 文档分割为若干段落。
+HTML 段落是通过 <p> 标签进行定义的，从而可以把 HTML 文档分割为若干段落\footnote{提示：使用空的段落标记 <p></p> 去插入一个空行是个坏习惯。用 <br /> 标签代替它，但是不要用 <br /> 标签去创建列表。}。
 
-注释：浏览器会自动地在段落的前后添加空行\footnote{<p> 是块级元素。}。
 
-提示：使用空的段落标记 <p></p> 去插入一个空行是个坏习惯。用 <br /> 标签代替它！（但是不要用 <br /> 标签去创建列表。
 
-即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来，但是在未来的 HTML 版本中，不允许省略结束标签。
 
-提示：通过结束标签来关闭 HTML 是一种经得起未来考验的 HTML 编写方法。清楚地标记某个元素在何处开始，并在何处结束，不论对您还是对浏览器来说，都会使代码更容易理解。
+
+即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来，但是在未来的 HTML 版本中，不允许省略结束标签\footnote{提示：通过结束标签来关闭 HTML 是一种经得起未来考验的 HTML 编写方法。清楚地标记某个元素在何处开始，并在何处结束，不论对开发者还是对浏览器来说，都会使代码更容易理解。}。
+
+
 
 
 
