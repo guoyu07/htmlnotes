@@ -1,0 +1,219 @@
+\part{HTTP methods}
+
+
+设计超文本传输协议（HTTP）的目的是保证客户机与服务器之间的通信，它的工作方式是客户机与服务器之间的请求-应答协议。
+
+Web浏览器可能是客户端，而计算机上的网络应用程序也可能作为服务器端。客户端（浏览器）向服务器提交 HTTP 请求；服务器向客户端返回响应。响应包含关于请求的状态信息以及可能被请求的内容。
+
+
+在客户机和服务器之间进行请求-响应时，两种最常被用到的方法是：GET 和 POST。
+
+\begin{compactitem}
+\item GET - 从指定的资源请求数据。
+\item POST - 向指定的资源提交要被处理的数据。
+\end{compactitem}
+
+
+\chapter{GET}
+
+请注意，查询字符串（名称/值对）是在 GET 请求的 URL 中发送的：
+
+\begin{lstlisting}[language=HTML]
+    /test/demo_form.asp?name1=value1&name2=value2
+\end{lstlisting}
+
+有关 GET 请求的其他一些注释：
+
+\begin{compactitem}
+\item GET 请求可被缓存
+\item GET 请求保留在浏览器历史记录中
+\item GET 请求可被收藏为书签
+\item GET 请求不应在处理敏感数据时使用
+\item GET 请求有长度限制
+\item GET 请求只应当用于取回数据
+\end{compactitem}
+
+
+\chapter{POST}
+
+请注意，查询字符串（名称/值对）是在 POST 请求的 HTTP 消息主体中发送的：
+
+\begin{lstlisting}[language=bash]
+POST /test/demo_form.asp HTTP/1.1
+Host: w3schools.com
+name1=value1&name2=value2
+\end{lstlisting}
+
+有关 POST 请求的其他一些注释：
+
+\begin{compactitem}
+\item POST 请求不会被缓存
+\item POST 请求不会保留在浏览器历史记录中
+\item POST 不能被收藏为书签
+\item POST 请求对数据长度没有要求
+\end{compactitem}
+
+下面的表格比较了两种 HTTP 方法：GET 和 POST。
+
+\begin{longtable}{|p{60pt}|p{150pt}|p{150pt}|}
+%head
+\multicolumn{3}{r}{...}
+\tabularnewline\hline
+		& GET 	& POST
+\endhead
+%endhead
+
+%firsthead
+\hline
+		& GET 	& POST
+\endfirsthead
+%endfirsthead
+
+%foot
+\multicolumn{3}{r}{...}
+\endfoot
+%endfoot
+
+%lastfoot
+\endlastfoot
+%endlastfoot
+\hline
+后退按钮/刷新	&无害				&数据会被重新提交（浏览器应该告知用户数据会被重新提交）。\\
+\hline
+书签			&可收藏为书签		&不可收藏为书签\\
+\hline
+缓存			&能被缓存			&不能缓存\\
+\hline
+编码类型		&application/x-www-form-urlencoded	&application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码。\\
+\hline
+历史	参数		&保留在浏览器历史中。&参数不会保存在浏览器历史中。\\
+\hline
+对数据长度的限制&是的。当发送数据时，GET 方法向 URL 添加数据；URL 的长度是受限制的（URL 的最大长度是 2048 个字符）。&无限制。\\
+\hline
+对数据类型的限制&只允许 ASCII 字符。	&没有限制。也允许二进制数据。\\
+\hline
+安全性	&与 POST 相比，GET 的安全性较差，因为所发送的数据是 URL 的一部分。\newline 在发送密码或其他敏感信息时绝不要使用 GET ！& POST 比 GET 更安全，因为参数不会被保存在浏览器历史或 web 服务器日志中。\\
+\hline
+可见性	&数据在 URL 中对所有人都是可见的。&数据不会显示在 URL 中。\\
+\hline
+
+
+\end{longtable}
+
+
+
+下面的表格列出了其他一些 HTTP 请求方法：
+
+\begin{longtable}{|p{60pt}|p{300pt}|}
+%head
+\multicolumn{2}{r}{...}
+\tabularnewline\hline
+方法		&描述
+\endhead
+%endhead
+
+%firsthead
+\hline
+方法		&描述
+\endfirsthead
+%endfirsthead
+
+%foot
+\multicolumn{2}{r}{...}
+\endfoot
+%endfoot
+
+%lastfoot
+\endlastfoot
+%endlastfoot
+
+
+\hline
+HEAD		&与 GET 相同，但只返回 HTTP 报头，不返回文档主体。\\
+\hline
+PUT			&上传指定的 URI 表示。\\
+\hline
+DELETE		&删除指定资源。\\
+\hline
+OPTIONS		&返回服务器支持的 HTTP 方法。\\
+\hline
+CONNECT	&把请求连接转换到透明的 TCP/IP 通道。\\
+\hline
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
