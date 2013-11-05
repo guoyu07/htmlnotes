@@ -521,24 +521,37 @@ HTML 也有多个不同的版本，只有完全明白页面中使用的确切 HT
 此外，文档类型声明在验证网页时也很有用。
 
 
-下面的表格列出了所有的 HTML/XHTML 元素，并定义了每个元素可以出现在哪种文档类型声明 (DTD) 中 。
+下面的表格列出了所有的HTML 4.01/XHTML 元素，并定义了每个元素可以出现在哪种文档类型声明 (DTD) 中 。
 
 
-\begin{longtable}{|l|l|l|l|l|}
+\begin{longtable}{|p{70pt}|p{70pt}|p{70pt}|p{70pt}|p{70pt}|}
+%head
 \multicolumn{5}{r}{...}
 \tabularnewline\hline
-%Tag				& Description		& DTD		
+\multirow{2}{70pt}{Tag}	 	&\multicolumn{3}{c|}{HTML 4.01 / XHTML 1.0}		&\multirow{2}{70pt}{XHTML1.1} \\ \cline{2-4} 
+							&Transitional		& Strict  	&  Frameset	 		& \multicolumn{1}{c|}{}
 \endhead
-\hline
+%endhead
 
-\multirow{2}{60pt}{Tag}& \multicolumn{3}{c|}{HTML 4.01 / XHTML 1.0}	&\multirow{2}{50pt}{XHTML} \\ \cline{2-4} 
-\multicolumn{1}{|c|}{}	&Transitional		& Strict  	&  Frameset	 		& \multicolumn{1}{c|}{}
-\tabularnewline\hline
+%firsthead
+\caption{HTML 4.01/XHTML 元素与DTD}\\
+\hline
+\multirow{2}{70pt}{Tag}	 	&\multicolumn{3}{c|}{HTML 4.01 / XHTML 1.0}		&\multirow{2}{70pt}{XHTML1.1} \\ \cline{2-4} 
+							&Transitional		& Strict  	&  Frameset	 		& \multicolumn{1}{c|}{}
 \endfirsthead
+%endfirsthead
+
+%foot
 \multicolumn{5}{r}{...}
 \endfoot
-%\tabularnewline\hline
+%endfoot
+
+\hline
+
+%lastfoot
 \endlastfoot
+%endlastfoot
+\hline
 <a>					&Yes			&Yes	&Yes				&Yes	\\
 \hline
 <abbr>				&Yes			&Yes	&Yes				&Yes	\\
@@ -607,7 +620,7 @@ HTML 也有多个不同的版本，只有完全明白页面中使用的确切 HT
 \hline
 <frameset>			&No				&No		&Yes				&No		\\
 \hline
-<h1>to<h6>			&Yes			&Yes	&Yes				&Yes	\\
+<h1> to <h6>			&Yes			&Yes	&Yes				&Yes	\\
 \hline
 <head>				&Yes			&Yes	&Yes				&Yes	\\
 \hline
