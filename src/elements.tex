@@ -1251,13 +1251,20 @@ Standardized in HTML 4.0; still current.
 
 A block-level logical division. A generic element with no semantic meaning used to distinguish a document section, usually for purposes such as presentation or behaviour controlled by style sheets or DOM calls.
 
-HTML <div> 元素是块级元素，它是可用于组合其他 HTML 元素的容器。
+HTML <div>元素是块级元素，它是可用于组合其他HTML元素的容器。
 
-<div> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。
+<div> 元素没有特定的含义。除此之外，由于它属于块级元素，这意味着它的内容自动地开始一个新行，浏览器会在其前后显示折行。实际上，换行是 <div> 固有的唯一格式表现。
 
-如果与 CSS 一同使用，<div> 元素可用于对大的内容块设置样式属性。
 
-<div> 元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 <table> 元素进行文档布局不是表格的正确用法。<table> 元素的作用是显示表格化的数据。
+如果与 CSS 一同使用，通过 <div> 的 class 或 id 应用额外的样式。<div> 元素可定义文档中的分区或节（division/section），可对大的内容块设置样式属性。可以不必为每一个 <div> 都加上类或 id，虽然这样做也有一定的好处。
+
+可以对同一个 <div> 元素应用 class 或 id 属性，但是更常见的情况是只应用其中一种。这两者的主要差异是，class 用于元素组（类似的元素，或者可以理解为某一类元素），而 id 用于标识单独的唯一的元素。
+
+
+<div> 元素的另一个常见的用途是文档布局。<div>可以把文档分割为独立的、不同的部分，因此它可以用作严格的组织工具，并且不使用任何格式与其关联。如果用 id 或 class 来标记<div>，那么该标签的作用会变得更加有效。
+
+<div>取代了使用表格定义布局的老式方法，使用 <table> 元素进行文档布局不是表格的正确用法，<table> 元素的作用是显示表格化的数据。
+
 
 Proposed in the HTML 3.0 Drafts; Standardized in HTML 3.2; still current.
 
@@ -2424,9 +2431,7 @@ These elements can be combined into a form or in some instances used separately 
 (These elements are either block or inline elements, but are collected here as their use is more restricted than other inline or block elements.)
 
 
-HTML 表单用于搜集不同类型的用户输入。
-
-具体来说，表单是一个包含表单元素的区域，允许用户在表单中（比如：文本域、下拉列表、单选框、复选框等等）输入信息的元素。
+HTML 表单用于搜集不同类型的用户输入。具体来说，表单是一个包含表单元素的区域，允许用户在表单中（比如：文本域、下拉列表、单选框、复选框等等）输入信息的元素。
 
 表单使用表单标签（<form>）定义。
 
@@ -2443,7 +2448,7 @@ HTML 表单用于搜集不同类型的用户输入。
 注意，表单本身并不可见。同时，在大多数浏览器中，文本域的缺省宽度是20个字符。
 
 
-\subsection{<form action="url">...</form>}
+\subsection{<form action=``url">...</form>}
 
 Creates a form. The form element specifies and operates the overall action of a form area, using the required action attribute.
 
@@ -2477,47 +2482,47 @@ Standardized in HTML 2.0; still current.
 Input Types:
 
 \begin{compactitem}
-\item  type="checkbox"
+\item  type=``checkbox"
 
 A checkbox. Can be checked or unchecked.
 
 当用户需要从若干给定的选择中选取一个或若干选项时，就会用到复选框。
 
-\item type="radio"
+\item type=``"radio"
 
 A radio button. If multiple radio buttons are given the same name, the user will only be able to select one of them from this group.
 
 当用户从若干给定的的选择中选取其一时，就会用到单选框。
 
- \item type="button"
+ \item type=``button"
 
 A general-purpose button. The element <button> is preferred if possible (i.e. if the client supports it) as it provides richer possibilities.
 
-\item  type="submit"
+\item  type=``submit"
 
 A submit button.
 
- \item type="image"
+ \item type=``"image"
 
 An image button. The image URL may be specified with the src attribute.
 
- \item type="reset"
+ \item type=``reset"
 
 A reset button for resetting the form to default values.
 
- \item type="text"
+ \item type=``text"
 
 A one-line text input field. The size attribute specifies the default width of the input in character-widths. max-length sets the maximum number of characters the user can enter (which may be greater than size).
 
- \item type="password"
+ \item type=``password"
 
 A variation of text. The difference is that text typed in this field is masked — characters are displayed as an asterisk, a dot or another replacement. It should be noted, however, that the password is still submitted to the server as clear text, so an underlying secure transport layer like HTTPS is needed if confidentiality is a concern.
 
- \item type="file"
+ \item type=``file"
 
 A file select field (for uploading files to a server).
 
- \item type="hidden"
+ \item type=``"hidden"
 
 hidden inputs are not visible in the rendered page, but allow a designer to maintain a copy of data that needs to be submitted to the server as part of the form. This may, for example, be data that this web user entered or selected on a previous form that needs to be processed in conjunction with the current form.
 
@@ -3128,11 +3133,9 @@ A comment can appear anywhere in a document, even before the doctype, but not in
 
 Comments do not nest: the markup <!- -Xbegin<!- -Y- ->Xend- -> will yield the comment Xbegin<!- -Y and the text Xend- -> after it.
 
-可以将注释插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。浏览器会忽略注释，也不会显示它们。
+可以将注释\footnote{开始括号之后（左边的括号）需要紧跟一个叹号，结束括号之前（右边的括号）不需要。}插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。合理地使用注释可以对未来的代码编辑工作产生帮助，浏览器会忽略注释，不会显示它们。
 
-注释：开始括号之后（左边的括号）需要紧跟一个叹号，结束括号之前（右边的括号）不需要。
 
-提示：合理地使用注释可以对未来的代码编辑工作产生帮助。
 
 
 
