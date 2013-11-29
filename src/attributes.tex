@@ -8,17 +8,22 @@ An HTML attribute is a modifier of an HTML element. HTML attributes generally ap
 
 Where tag names the HTML element, attribute is the name of the attribute, set to the provided value.
 
-属性为 HTML 元素提供附加信息，属性应写在元素的首标签上，属性总是以名称/值对的形式出现，比如：name="value"\footnote{注意，一些元素和属性的名称采用的是美式拼写，比如color（而不是colour）。}。
+属性为 HTML 元素提供附加信息，属性应写在元素的首标签上，属性总是以名称/值对的形式出现，比如：\texttt{name="value"}\footnote{注意，一些元素和属性的名称采用的是美式拼写，比如color（而不是colour）。}。
 
 属性的具体写法是：属性名称（attribute name）后紧跟一个等号（“=”），后面写上用双引号括起来的属性值（attribute value）。对于style属性的值，可以用分号（“;”）来分隔多个样式指令。
 
 
 属性和属性值对大小写不敏感。不过，万维网联盟在其 HTML 4 推荐标准中推荐小写的属性/属性值，而新版本的 (X)HTML 要求使用小写属性。
 
+\fbox{
+	\parbox[c][110pt][c]{360pt}{
+\noindent The value may be enclosed in single or double quotes, although values consisting of certain characters can be left unquoted in HTML (but not XHTML). Leaving attribute values unquoted is considered unsafe.
 
-The value may be enclosed in single or double quotes, although values consisting of certain characters can be left unquoted in HTML (but not XHTML). Leaving attribute values unquoted is considered unsafe.
+\noindent Although most attributes are provided as paired names and values, some affect the element simply by their presence in the start tag of the element (like the ismap attribute for the img element).
+	}
+}
 
-Although most attributes are provided as paired names and values, some affect the element simply by their presence in the start tag of the element (like the ismap attribute for the img element).
+
 
 不同元素使用不同的属性，属性值应该始终被包括在引号内。双引号是最常用的，不过使用单引号也没有问题。在某些个别的情况下，比如属性值本身就含有双引号，那么就必须使用单引号。
 
@@ -26,22 +31,8 @@ Although most attributes are provided as paired names and values, some affect th
 
 HTML里有很多元素，同样也有很多属性。有些属性仅用于个别元素，有些属性可用于很多元素。反之亦然：有些元素只能使用个别属性，有些元素可以使用较多的属性。
 
-\begin{table}[!h]
-\centering
-\begin{tabular}{|l|l|l|}
-\hline
-属性		&	值			& 描述	\\
-\hline
-class	&	\textsl{classname}	& 规定元素的类名（classname）	\\
-\hline
-id		& 	\textsl{id}			& 规定元素的唯一id			\\
-\hline
-style	& 	\textsl{style\_definiation} & 规定元素的行内样式（inline style）\\
-\hline
-title		& 	\textsl{text}			& 规定元素的额外信息（可在工具提示中显示）\\
-\hline
-\end{tabular}
-\end{table}
+
+
 
 Most elements can take any of several common attributes:
 
@@ -74,6 +65,10 @@ This example displays as HTML; in most browsers, pointing the cursor at the abbr
 
 
 Most elements also take the language-related attributes lang and dir.
+
+
+
+
 
 一般来说，一个元素包括一个首标签（start tag）、零或多个属性（attribute）、一些内容和一个尾标签（end tag），参见下图：
 
@@ -463,18 +458,31 @@ HTML attributes are generally classed as required attributes, optional attribute
 \zihao{8}
 
 %\begin{sidewaystable}{!h}
-\begin{longtable}{|p{18pt}|p{15pt}|p{15pt}|p{10pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|}
-\multicolumn{18}{r}{...}
-%\tabularnewline\hline
-\endhead
-\hline
+\begin{center}
+   \begin{landscape}
+%\begin{longtable}{|p{40pt}|p{20pt}|p{15pt}|p{10pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|p{16pt}|}
 
-%\tabularnewline\hline
+\begin{longtable}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+
+%head
+\multicolumn{18}{r}{...}
+\tabularnewline\hline
+\endhead
+%endhead
+
+%firsthead
 \endfirsthead
+%endfirsthead
+
+%foot
 \multicolumn{18}{r}{...}
 \endfoot
-%\tabularnewline\hline
+%endfoot
+
+%lastfoot
 \endlastfoot
+%endlastfoot
+
 \hline
 <frameset>	& onload	& onunload &	&& 		&  &  &  &  &  &  &  &  &  & & & \\				
 \hline													
@@ -615,6 +623,8 @@ HTML attributes are generally classed as required attributes, optional attribute
 <textarea>	&	&	&	& onclick	& ondblclick & onmousedown & onmousemove & onmouseout & onmouseover & onmouseup & onkeydown & onkeypress & onkeyup &onblur &onfocus &onchange &onselect \\				
 \hline
 \end{longtable}
+\end{landscape}
+\end{center}
 %\end{sidewaystable}
 
 \zihao{5}
@@ -646,6 +656,192 @@ title		&text		&规定元素的额外信息（可在工具提示中显示）\\
 \end{tabular}
 \end{table}
 
+\clearpage
+
+\subsection{HTML class}
+
+class 属性规定元素的类名（classname），W3C 的 HTML/XHTML 推荐标准中定义了该属性。注意，类名不能以数字开头，实际上也只有 Internet Explorer 支持这种做法。
+
+在 HTML 文档中使用 class 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element class="value">
+\end{lstlisting}
+
+\vspace{-15pt}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML class属性值}
+\label{html_class_attribute}
+\begin{tabular}{|m{40pt}|m{330pt}|}
+\hline
+值	&描述\\
+\hline
+classname	&规定元素的类的名称。如需为一个元素规定多个类，用空格分隔类名。\\
+\hline
+\end{tabular}
+\end{table}
+
+\vspace{-10pt}
+
+大多数时候，HTML class属性用于指向样式表中的类（class），而且可以给 HTML 元素赋予多个 class，例如：\texttt{<span class="left\_menu important">}，这样就可以把若干个 CSS 类合并到一个 HTML 元素。不过，也可以通过 JavaScript 来改变带有指定 class 的 HTML 元素。
+
+
+
+向HTML元素添加多个类的示例如下：
+
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  h1.intro {
+    color:blue;
+    text-align:center;
+  }
+  .important {
+    color:green;
+    background-color:yellow;
+  }
+</style>
+<title>HTML class attribute</title>
+</head>
+
+<body>
+  <h1 class="intro important">Header 1</h1>
+  <p>A paragraph.</p>
+  <p class="important">Note that this is an important paragraph.</p>
+</body>
+</html>
+\end{lstlisting}
+
+class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。
+
+\clearpage
+
+\subsection{HTML id}
+
+id 属性规定 HTML 元素的唯一的 id，而且 id 在 HTML 文档中必须是唯一的。
+
+在 HTML 文档中使用 class 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element id="value">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML id属性值}
+\label{html_id_attribute}
+\begin{tabular}{|m{40pt}|m{330pt}|}
+\hline
+值	&描述\\
+\hline
+id	&规定元素的唯一 id。\\
+\hline
+\end{tabular}
+\end{table}
+
+W3C 的 HTML/XHTML 推荐标准中定义了HTML id属性，id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式。
+
+下面的示例中，通过 JavaScript 利用 id 属性来改变一段文本：
+
+\begin{lstlisting}[language=HTML]
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function change_header(){
+  document.getElementById("myHeader").innerHTML="Nice day!";
+}
+</script>
+</head>
+
+<body>
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="change_header()">Change text</button>
+</body>
+
+</html>
+\end{lstlisting}
+
+\clearpage
+
+
+
+\subsection{HTML style}
+
+style 属性规定元素的行内样式（inline style），W3C 的 HTML/XHTML 推荐标准中定义了该属性。
+
+style 属性将覆盖任何全局的样式设定，例如在 <style> 标签或在外部样式表中规定的样式。
+
+
+在 HTML 文档中使用 style 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element style="value">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML style属性值}
+\label{html_style_attribute}
+\begin{tabular}{|m{80pt}|m{290pt}|}
+\hline
+值	&描述\\
+\hline
+style\_definition	&一个或多个由分号分隔的 CSS 属性和值。\\
+\hline
+\end{tabular}
+\end{table}
+
+在 HTML 文档中使用 style 属性的示例如下：
+
+\begin{lstlisting}[language=HTML]
+<h1 style="color:blue; text-align:center">This is a header</h1>
+<p style="color:red">This is a paragraph.</p>
+\end{lstlisting}
+
+\clearpage
+
+\subsection{HTML title}
+
+title 属性规定关于元素的额外信息，这些信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。
+
+W3C 的 HTML/XHTML 推荐标准中定义了该属性，title 属性常与 form 以及 a 元素一同使用，以提供关于输入格式和链接目标的信息，同时title属性也是 abbr 和 acronym 元素的必需属性。
+
+在 HTML 文档中使用 title 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element title="value">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML title属性值}
+\label{html_title_attribute}
+\begin{tabular}{|m{40pt}|m{330pt}|}
+\hline
+值	&描述\\
+\hline
+text	&规定元素的工具提示文本（tooltip text）。\\
+\hline
+\end{tabular}
+\end{table}
+
+在 HTML 文档中使用 title 属性的示例如下：
+
+\begin{lstlisting}[language=HTML]
+<abbr title="People's Republic of China">PRC</abbr> was founded in 1949.
+<p title="Free Web tutorials">theqiong.com</p>
+\end{lstlisting}
+
+\clearpage
 
 \section{Language Attributes}
 
@@ -655,7 +851,7 @@ title		&text		&规定元素的额外信息（可在工具提示中显示）\\
 \begin{table}[!h]
 \centering
 \caption{语言属性 (Language Attributes)}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|m{80pt}|m{90pt}|m{200pt}|}
 \hline
 属性		&值		&描述\\
 \hline
@@ -676,7 +872,76 @@ lang 属性应用于几乎所有的 XHTML 元素，它定义元素内部的内�
 <div lang="no" xml:lang="no">test</div>
 \end{lstlisting}
 
+\subsection{HTML dir}
 
+dir 属性规定元素内容的文本方向，所有浏览器均支持 dir 属性。
+
+dir 属性在以下标签中无效：<base>, <br>, <frame>, <frameset>, <hr>, <iframe>, <param> 以及 <script>。
+
+在 HTML 文档中使用 dir 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element dir="ltr | rtl">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML dir属性值}
+\label{html_dir_attribute}
+\begin{tabular}{|m{80pt}|m{290pt}|}
+\hline
+值	&描述\\
+\hline
+ltr	&默认。从左向右的文本方向。\\
+\hline
+rtl	&从右向左的文本方向。\\
+\hline
+\end{tabular}
+\end{table}
+
+在如下的 HTML 示例文档中使用 dir 属性产生了一段方向从右向左的段落：
+
+\begin{lstlisting}[language=HTML]
+<p dir="rtl">Write this text right-to-left!</p>
+\end{lstlisting}
+
+
+\clearpage
+
+\subsection{HTML lang}
+
+lang 属性规定元素内容的语言，所有浏览器均支持 lang 属性。
+
+lang 属性在以下标签中无效：<base>, <br>, <frame>, <frameset>, <hr>, <iframe>, <param> 以及 <script>。
+
+在 HTML 文档中使用 lang 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element lang="language_code">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML lang属性值}
+\label{html_lang_attribute}
+\begin{tabular}{|m{80pt}|m{290pt}|}
+\hline
+值	&描述\\
+\hline
+language\_code	&规定元素内容的语言代码。\\
+\hline
+\end{tabular}
+\end{table}
+
+在如下的 HTML 示例文档中使用lang段落说明中的一些法文：
+
+\begin{lstlisting}[language=HTML]
+<p lang="fr">Ceci est un paragraphe.</p>
+\end{lstlisting}
+
+\clearpage
 
 \section{Keyboard Attributes}
 
@@ -684,19 +949,94 @@ lang 属性应用于几乎所有的 XHTML 元素，它定义元素内部的内�
 \begin{table}[!h]
 \centering
 \caption{键盘属性 (Keyboard Attributes)}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|m{80pt}|m{90pt}|m{200pt}|}
 \hline
 属性			&值			&描述\\
 \hline
 accesskey	&character	&设置访问元素的键盘快捷键。\\
 \hline
-tabindex		&number		&设置元素的 Tab 键控制次序。\\
+tabindex	&number		&设置元素的 Tab 键控制次序。\\
 \hline
 \end{tabular}
 \end{table}
 
 
 
+
+\subsection{HTML accesskey}
+
+accesskey 属性规定激活（使元素获得焦点）元素的快捷键。几乎所有浏览器均 accesskey 属性，除了 Opera。
+
+以下元素支持 accesskey 属性：<a>, <area>, <button>, <input>, <label>, <legend> 以及 <textarea>。
+
+在 HTML 文档中使用 accesskey 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element accesskey="character">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML accesskey属性值}
+\label{html_lang_attribute}
+\begin{tabular}{|m{80pt}|m{290pt}|}
+\hline
+值	&描述\\
+\hline
+accesskey	&规定激活（使元素获得焦点）元素的快捷键。\\
+\hline
+\end{tabular}
+\end{table}
+
+使用Alt + accessKey (或者 Shift + Alt + accessKey) 来访问带有指定快捷键的元素。
+
+在 HTML 文档中使用 accesskey 属性来设置指定快捷键的超链接的示例如下：
+
+\begin{lstlisting}[language=HTML]
+<a href="http://www.w3.org/html/" accesskey="h">HTML</a><br />
+<a href="http://www.w3.org/css/" accesskey="c">CSS</a>
+\end{lstlisting}
+
+\clearpage
+
+
+\subsection{HTML tabindex}
+
+tabindex 属性规定元素的 tab 键控制次序（当 tab 键用于导航时）。几乎所有浏览器均 tabindex 属性，除了 Safari。
+
+以下元素支持 tabindex 属性：<a>, <area>, <button>, <input>, <object>, <select> 以及 <textarea>。
+
+在 HTML 文档中使用 tabindex 属性的语法如下：
+
+\begin{lstlisting}[language=HTML]
+<element tabindex="number">
+\end{lstlisting}
+
+\begin{table}[!h]
+\centering
+\vspace{-10pt}
+\caption{HTML tabindex属性值}
+\label{html_tabindex_attribute}
+\begin{tabular}{|m{80pt}|m{290pt}|}
+\hline
+值	&描述\\
+\hline
+number	&规定元素的 tab 键控制次序（1 是第一个）。\\
+\hline
+\end{tabular}
+\end{table}
+
+在 HTML 文档中使用 tabindex 属性来设置tab 键顺序的链接的示例如下：
+
+\begin{lstlisting}[language=HTML]
+<a href="http://www.w3.org/" tabindex="2">W3C</a>
+<a href="http://www.google.com/" tabindex="1">Google</a>
+<a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+\end{lstlisting}
+
+
+\clearpage
 
 
 
