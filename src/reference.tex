@@ -1,11 +1,491 @@
-\part{HTML Reference}
+\part{Reference}
+
+
+\chapter{HTML Elements}
+
+
+
+\section{HTML 4.01/XHTML Elements}
+
+
+
+下面的表格列出了所有的HTML 4.01/XHTML 元素，并定义了每个元素可以出现在哪种文档类型声明 (DTD) 中 。
+
+
+\begin{longtable}{|p{70pt}|p{70pt}|p{70pt}|p{70pt}|p{70pt}|}
+%head
+\multicolumn{5}{r}{...}
+\tabularnewline\hline
+\multirow{2}{70pt}{Tag}	 	&\multicolumn{3}{c|}{HTML 4.01 / XHTML 1.0}		&\multirow{2}{70pt}{XHTML1.1} \\ \cline{2-4} 
+							&Transitional		& Strict  	&  Frameset	 		& \multicolumn{1}{c|}{}
+\endhead
+%endhead
+
+%firsthead
+\caption{HTML 4.01/XHTML 元素与DTD}\\
+\hline
+\multirow{2}{70pt}{Tag}	 	&\multicolumn{3}{c|}{HTML 4.01 / XHTML 1.0}		&\multirow{2}{70pt}{XHTML1.1} \\ \cline{2-4} 
+							&Transitional		& Strict  	&  Frameset	 		& \multicolumn{1}{c|}{}
+\endfirsthead
+%endfirsthead
+
+%foot
+\multicolumn{5}{r}{...}
+\endfoot
+%endfoot
+
+\hline
+
+%lastfoot
+\endlastfoot
+%endlastfoot
+\hline
+<a>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<abbr>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<acronym>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<address>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<applet>				&Yes			&No		&Yes				&No		\\
+\hline
+<area />				&Yes			&Yes	&Yes				&No		\\
+\hline
+<b>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<base />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<basefont />			&Yes			&No		&Yes				&No		\\
+\hline
+<bdo>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<big>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<blockquote>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<body>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<br />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<button>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<caption>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<center>				&Yes			&No		&Yes				&No		\\
+\hline
+<cite>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<code>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<col />				&Yes			&Yes	&Yes				&No		\\
+\hline
+<colgroup>			&Yes			&Yes	&Yes				&No		\\
+\hline
+<dd>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<del>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<dfn>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<dir>				&Yes			&No		&Yes				&No		\\
+\hline
+<div>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<dl>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<dt>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<em>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<fieldset>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<font>				&Yes			&No		&Yes				&No		\\
+\hline
+<form>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<frame />				&No				&No		&Yes				&No		\\
+\hline
+<frameset>			&No				&No		&Yes				&No		\\
+\hline
+<h1> to <h6>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<head>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<hr />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<html>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<i>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<iframe>				&Yes			&No		&Yes				&No		\\
+\hline
+<img />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<input />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<ins>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<isindex>				&Yes			&No		&Yes				&No		\\
+\hline
+<kbd>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<label>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<legend>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<li>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<link />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<map>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<menu>				&Yes			&No		&Yes				&No		\\
+\hline
+<meta />				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<noframes>			&Yes			&No		&Yes				&No		\\
+\hline
+<noscript>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<object>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<ol>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<optgroup>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<option>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<p>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<param />			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<pre>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<q>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<s>					&Yes			&No		&Yes				&No		\\
+\hline
+<samp>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<script>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<select>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<small>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<span>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<strike>				&Yes			&No		&Yes				&No		\\
+\hline
+<strong>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<style>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<sub>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<sup>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<table>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<tbody>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<td>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<textarea>			&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<tfoot>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<th>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<thead>				&Yes			&Yes	&Yes				&No		\\
+\hline
+<title>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<tr>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<tt>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<u>					&Yes			&No		&Yes				&No		\\
+\hline
+<ul>					&Yes			&Yes	&Yes				&Yes	\\
+\hline
+<var>				&Yes			&Yes	&Yes				&Yes	\\
+\hline
+\end{longtable}
+
+
+\section{HTML5 Elements}
+
+
+\begin{longtable}{|p{80pt}|p{260pt}|}
+%head
+\multicolumn{2}{r}{}
+\tabularnewline\hline
+标签	&描述
+\endhead
+%endhead
+
+%firsthead
+\caption{HTML 5 Elements}\\
+\hline
+标签	&描述
+\endfirsthead
+%endfirsthead
+
+%foot
+\multicolumn{2}{r}{}
+\endfoot
+%endfoot
+
+%lastfoot
+\endlastfoot
+%endlastfoot
+\hline
+<!--...-->		&定义注释。\\
+\hline
+<!DOCTYPE> 	&定义文档类型。\\
+\hline
+<a>			&定义超链接。\\
+\hline
+<abbr>		&定义缩写。\\
+\hline
+<acronym>	&HTML 5 中不支持。定义首字母缩写。\\
+\hline
+<address>	&定义地址元素。\\
+\hline
+<applet>		&HTML 5 中不支持。定义 applet。\\
+\hline
+<area>		&定义图像映射中的区域。\\
+\hline
+<article>		&定义 article。\\
+\hline
+<aside>		&定义页面内容之外的内容。\\
+\hline
+<audio>		&定义声音内容。\\
+\hline
+<b>			&定义粗体文本。\\
+\hline
+<base>		&定义页面中所有链接的基准 URL。\\
+\hline
+<basefont>	&HTML 5 中不支持。需要使用 CSS 代替。\\
+\hline
+<bdi>		&定义文本的文本方向，使其脱离其周围文本的方向设置。\\
+\hline
+<bdo>		&定义文本显示的方向。\\
+\hline
+<big>		&HTML 5 中不支持。定义大号文本。\\
+\hline
+<blockquote>	&定义长的引用。\\
+\hline
+<body>		&定义 body 元素。\\
+\hline
+<br>			&插入换行符。\\
+\hline
+<button>		&定义按钮。\\
+\hline
+<canvas>		&定义图形。\\
+\hline
+<caption>		&定义表格标题。\\
+\hline
+<center>		&HTML 5 中不支持。定义居中的文本。\\
+\hline
+<cite>		&定义引用。\\
+\hline
+<code>		&定义计算机代码文本。\\
+\hline
+<col>		&定义表格列的属性。\\
+\hline
+<colgroup>	&定义表格列的分组。\\
+\hline
+<command>	&定义命令按钮。\\
+\hline
+<datalist>	&定义下拉列表。\\
+\hline
+<dd>		&定义定义的描述。\\
+\hline
+<del>		&定义删除文本。\\
+\hline
+<details>		&定义元素的细节。\\
+\hline
+<dfn>		&定义定义项目。\\
+\hline
+<dir>		&HTML 5 中不支持。定义目录列表。\\
+\hline
+<div>		&定义文档中的一个部分。\\
+\hline
+<dl>			&定义定义列表。\\
+\hline
+<dt>			&定义定义的项目。\\
+\hline
+<em>		&定义强调文本。\\
+\hline
+<embed>		&定义外部交互内容或插件。\\
+\hline
+<fieldset>	&定义 fieldset。\\
+\hline
+<figcaption>	&定义 figure 元素的标题。\\
+\hline
+<figure>		&定义媒介内容的分组，以及它们的标题。\\
+\hline
+<font>		&HTML 5 中不支持。\\
+\hline
+<footer>		&定义 section 或 page 的页脚。\\
+\hline
+<form>		&定义表单。\\
+\hline
+<frame>		&HTML 5 中不支持。定义子窗口（框架）。\\
+\hline
+<frameset>	&HTML 5 中不支持。定义框架的集。\\
+\hline
+<h1> to <h6>	&定义标题 1 到标题 6。\\
+\hline
+<head>		&定义关于文档的信息。\\
+\hline
+<header>		&定义 section 或 page 的页眉。\\
+\hline
+<hgroup>		&定义有关文档中的 section 的信息。\\
+\hline
+<hr>			&定义水平线。\\
+\hline
+<html>		&定义 html 文档。\\
+\hline
+<i>			&定义斜体文本。\\
+\hline
+<iframe>		&定义行内的子窗口（框架）。\\
+\hline
+<img>		&定义图像。\\
+\hline
+<input>		&定义输入域。\\
+\hline
+<ins>		&定义插入文本。\\
+\hline
+<keygen>		&定义生成密钥。\\
+\hline
+<isindex>		&HTML 5 中不支持。定义单行的输入域。\\
+\hline
+<kbd>		&定义键盘文本。\\
+\hline
+<label>		&定义表单控件的标注。\\
+\hline
+<legend>		&定义 fieldset 中的标题。\\
+\hline
+<li>			&定义列表的项目。\\
+\hline
+<link>		&定义资源引用。\\
+\hline
+<map>		&定义图像映射。\\
+\hline
+<mark>		&定义有记号的文本。\\
+\hline
+<menu>		&定义菜单列表。\\
+\hline
+<meta>		&定义元信息。\\
+\hline
+<meter>		&定义预定义范围内的度量。\\
+\hline
+<nav>		&定义导航链接。\\
+\hline
+<noframes>	&HTML 5 中不支持。定义 noframe 部分。\\
+\hline
+<noscript>	&定义 noscript 部分。\\
+\hline
+<object>		&定义嵌入对象。\\
+\hline
+<ol>			&定义有序列表。\\
+\hline
+<optgroup>	&定义选项组。\\
+\hline
+<option>		&定义下拉列表中的选项。\\
+\hline
+<output>		&定义输出的一些类型。\\
+\hline
+<p>			&定义段落。\\
+\hline
+<param>		&为对象定义参数。\\
+\hline
+<pre>		&定义预格式化文本。\\
+\hline
+<progress>	&定义任何类型的任务的进度。\\
+\hline
+<q>			&定义短的引用。\\
+\hline
+<rp>			&定义若浏览器不支持 ruby 元素显示的内容。\\
+\hline
+<rt>			&定义 ruby 注释的解释。\\
+\hline
+<ruby>		&定义 ruby 注释。\\
+\hline
+<s>			&HTML 5 中不支持。定义加删除线的文本。\\
+\hline
+<samp>		&定义样本计算机代码。\\
+\hline
+<script>		&定义脚本。\\
+\hline
+<section>		&定义 section。\\
+\hline
+<select>		&定义可选列表。\\
+\hline
+<small>		&将旁注 (side comments) 呈现为小型文本。\\
+\hline
+<source>		&定义媒介源。\\
+\hline
+<span>		&定义文档中的 section。\\
+\hline
+<strike>		&HTML 5 中不支持。定义加删除线的文本。\\
+\hline
+<strong>		&定义强调文本。\\
+\hline
+<style>		&定义样式定义。\\
+\hline
+<sub>		&定义下标文本。\\
+\hline
+<summary>	&定义 details 元素的标题。\\
+\hline
+<sup>		&定义上标文本。\\
+\hline
+<table>		&定义表格。\\
+\hline
+<tbody>		&定义表格的主体。\\
+\hline
+<td>			&定义表格单元。\\
+\hline
+<textarea>	&定义 textarea。\\
+\hline
+<tfoot>		&定义表格的脚注。\\
+\hline
+<th>			&定义表头。\\
+\hline
+<thead>		&定义表头。\\
+\hline
+<time>		&定义日期/时间。\\
+\hline
+<title>		&定义文档的标题。\\
+\hline
+<tr>			&定义表格行。\\
+\hline
+<track>		&定义用在媒体播放器中的文本轨道。\\
+\hline
+<tt>			&HTML 5 中不支持。定义打字机文本。\\
+\hline
+<u>			&HTML 5 中不支持。定义下划线文本。\\
+\hline
+<ul>			&定义无序列表。\\
+\hline
+<var>		&定义变量。\\
+\hline
+<video>		&定义视频。\\
+\hline
+<xmp>		&HTML 5 中不支持。定义预格式文本。\\
+\hline
+\end{longtable}
 
 
 
 \chapter{HTML Colors}
 
 
-\part{HTML Colors}
+
 
 颜色是通过对红、绿和蓝光的组合来显示的。
 
@@ -384,8 +864,1846 @@ YellowGreen		&\#9ACD32	&\cellcolor{YellowGreen}\\
 \hline
 \end{longtable}
 
+\chapter{HTML Characterset}
 
 
+
+
+
+
+
+
+
+
+要正确地显示 HTML 页面，浏览器必须知道当前页面使用何种字符集。万维网早期使用的字符集是 ASCII。ASCII 支持 0-9 的数字，大写和小写英文字母表，以及一些特殊字符。
+
+由于很多国家使用的字符并不属于 ASCII，现代浏览器的默认字符集是 ISO-8859-1。如果网页使用不同于 ISO-8859-1 的字符集，就应该在 <meta> 标签进行指定。
+
+
+HTML 和 XHTML 用标准的 7 比特 ASCII 代码在网络上传输数据，7 比特 ASCII 代码可提供 128 个不同的字符值。
+
+\begin{longtable}{|l|l|l|}
+\multicolumn{3}{r}{...}
+\tabularnewline\hline
+结果		&描述		&实体编号			
+\endhead
+\caption{7 比特 可显示的 ASCII 代码}\\
+\hline
+结果		&描述		&实体编号	
+\tabularnewline\hline
+\endfirsthead
+\multicolumn{3}{r}{...}
+\endfoot
+%\tabularnewline\hline
+\endlastfoot
+\hline
+		&space			&\&\#32;\\
+\hline
+!		&exclamation mark	&\&\#33;\\
+\hline	
+"		&quotation mark	&\&\#34;\\
+\hline
+\#		&number sign		&\&\#35;\\
+\hline
+\$		&dollar sign		&\&\#36;\\
+\hline
+\%		&percent sign		&\&\#37;\\
+\hline
+\&	&ampersand			&\&\#38;\\
+\hline
+'	&apostrophe			&\&\#39;\\
+\hline
+(	&left parenthesis		&\&\#40;\\
+\hline
+)	&right parenthesis		&\&\#41;\\
+\hline
+*	&asterisk				&\&\#42;\\
+\hline
++	&plus sign			&\&\#43;\\
+\hline
+,	&comma				&\&\#44;\\
+\hline
+-	&hyphen				&\&\#45;\\
+\hline
+.	&period				&\&\#46;\\
+\hline
+/	&slash				&\&\#47;\\
+\hline
+0	&digit 0				&\&\#48;\\
+\hline
+1	&digit 1				&\&\#49;\\
+\hline
+2	&digit 2				&\&\#50;\\
+\hline
+3	&digit 3				&\&\#51;\\
+\hline
+4	&digit 4				&\&\#52;\\
+\hline
+5	&digit 5				&\&\#53;\\
+\hline
+6	&digit 6				&\&\#54;\\
+\hline
+7	&digit 7				&\&\#55;\\
+\hline
+8	&digit 8				&\&\#56;\\
+\hline
+9	&digit 9				&\&\#57;\\
+\hline
+:	&colon				&\&\#58;\\
+\hline
+;	&semicolon			&\&\#59;\\
+\hline
+<	&less-than			&\&\#60;\\
+\hline
+=	&equals-to			&\&\#61;\\
+\hline
+>	&greater-than			&\&\#62;\\
+\hline
+?	&question mark		&\&\#63;\\
+\hline
+@	&at sign				&\&\#64;\\
+\hline
+A	&uppercase A			&\&\#65;\\
+\hline
+B	&uppercase B			&\&\#66;\\
+\hline
+C	&uppercase C			&\&\#67;\\
+\hline
+D	&uppercase D			&\&\#68;\\
+\hline
+E	&uppercase E			&\&\#69;\\
+\hline
+F	&uppercase F			&\&\#70;\\
+\hline
+G	&uppercase G			&\&\#71;\\
+\hline
+H	&uppercase H			&\&\#72;\\
+\hline
+I	&uppercase I			&\&\#73;\\
+\hline
+J	&uppercase J			&\&\#74;\\
+\hline
+K	&uppercase K			&\&\#75;\\
+\hline
+L	&uppercase L			&\&\#76;\\
+\hline
+M	&uppercase M			&\&\#77;\\
+\hline
+N	&uppercase N			&\&\#78;\\
+\hline
+O	&uppercase O			&\&\#79;\\
+\hline
+P	&uppercase P			&\&\#80;\\
+\hline
+Q	&uppercase Q			&\&\#81;\\
+\hline
+R	&uppercase R			&\&\#82;\\
+\hline
+S	&uppercase S			&\&\#83;\\
+\hline
+T	&uppercase T			&\&\#84;\\
+\hline
+U	&uppercase U			&\&\#85;\\
+\hline
+V	&uppercase V			&\&\#86;\\
+\hline
+W	&uppercase W		&\&\#87;\\
+\hline
+X	&uppercase X			&\&\#88;\\
+\hline
+Y	&uppercase Y			&\&\#89;\\
+\hline
+Z	&uppercase Z			&\&\#90;\\
+\hline
+[	&left square bracket	&\&\#91;\\
+\hline
+\	&backslash			&\&\#92;\\
+\hline
+]	&right square bracket	&\&\#93;\\
+\hline
+\^{}	&caret				&\&\#94;\\
+\hline
+\_	&underscore			&\&\#95;\\
+\hline
+`	&grave accent			&\&\#96;\\
+\hline
+a	&lowercase a			&\&\#97;\\
+\hline
+b	&lowercase b			&\&\#98;\\
+\hline
+c	&lowercase c			&\&\#99;\\
+\hline
+d	&lowercase d			&\&\#100;\\
+\hline
+e	&lowercase e			&\&\#101;\\
+\hline
+f	&lowercase f			&\&\#102;\\
+\hline
+g	&lowercase g			&\&\#103;\\
+\hline
+h	&lowercase h			&\&\#104;\\
+\hline
+i	&lowercase i			&\&\#105;\\
+\hline
+j	&lowercase j			&\&\#106;\\
+\hline
+k	&lowercase k			&\&\#107;\\
+\hline
+l	&lowercase l			&\&\#108;\\
+\hline
+m	&lowercase m			&\&\#109;\\
+\hline
+n	&lowercase n			&\&\#110;\\
+\hline
+o	&lowercase o			&\&\#111;\\
+\hline
+p	&lowercase p			&\&\#112;\\
+\hline
+q	&lowercase q			&\&\#113;\\
+\hline
+r	&lowercase r			&\&\#114;\\
+\hline
+s	&lowercase s			&\&\#115;\\
+\hline
+t	&lowercase t			&\&\#116;\\
+\hline
+u	&lowercase u			&\&\#117;\\
+\hline
+v	&lowercase v			&\&\#118;\\
+\hline
+w	&lowercase w			&\&\#119;\\
+\hline
+x	&lowercase x			&\&\#120;\\
+\hline
+y	&lowercase y			&\&\#121;\\
+\hline
+z	&lowercase z			&\&\#122;\\
+\hline
+\{	&left curly brace		&\&\#123;\\
+\hline
+|	&vertical bar			&\&\#124;\\
+\hline
+\}	&right curly brace		&\&\#125;\\
+\hline
+\~{}	&tilde				&\&\#126;\\
+\hline
+\end{longtable}
+
+ASCII设备控制代码最初被设计为用来控制诸如打印机和磁带驱动器之类的硬件设备。在HTML文档中这些代码不会起任何作用。
+
+
+\begin{longtable}{|l|l|l|}
+\multicolumn{3}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体编号
+\endhead
+
+\caption{7 比特 设备控制 ASCII代码}\\
+\hline
+结果		&描述	&实体编号
+\tabularnewline\hline
+\endfirsthead
+
+\multicolumn{3}{r}{...}
+\endfoot
+
+\endlastfoot
+\hline
+NUL		&null character		&\&\#00;\\
+\hline
+SOH		&start of header		&\&\#01;\\
+\hline
+STX		&start of text			&\&\#02;\\
+\hline
+ETX		&end of text			&\&\#03;\\
+\hline
+EOT		&end of transmission	&\&\#04;\\
+\hline
+ENQ		&enquiry				&\&\#05;\\
+\hline
+ACK		&acknowledge		&\&\#06;\\
+\hline
+BEL		&bell (ring)			&\&\#07;\\
+\hline
+BS		&backspace			&\&\#08;\\
+\hline
+HT		&horizontal tab		&\&\#09;\\
+\hline
+LF		&line feed			&\&\#10;\\
+\hline
+VT		&vertical tab			&\&\#11;\\
+\hline
+FF		&form feed			&\&\#12;\\
+\hline
+CR		&carriage return		&\&\#13;\\
+\hline
+SO		&shift out			&\&\#14;\\
+\hline
+SI		&shift in				&\&\#15;\\
+\hline
+DLE		&data link escape		&\&\#16;\\
+\hline
+DC1		&device control 1		&\&\#17;\\
+\hline
+DC2		&device control 2		&\&\#18;\\
+\hline
+DC3		&device control 3		&\&\#19;\\
+\hline
+DC4		&device control 4		&\&\#20;\\
+\hline
+NAK		&negative acknowledge	&\&\#21;\\
+\hline
+SYN		&synchronize			&\&\#22;\\
+\hline
+ETB		&end transmission block	&\&\#23;\\
+\hline
+CAN		&cancel				&\&\#24;\\
+\hline
+EM		&end of medium		&\&\#25;\\
+\hline
+SUB		&substitute			&\&\#26;\\
+\hline
+ESC		&escape				&\&\#27;\\
+\hline
+FS		&file separator		&\&\#28;\\
+\hline
+GS		&group separator		&\&\#29;\\
+\hline
+RS		&record separator		&\&\#30;\\
+\hline
+US		&unit separator		&\&\#31;\\
+\hline
+DEL		&delete (rubout)		&\&\#127;\\
+\hline
+\end{longtable}
+
+
+\section{Character Entities}
+
+
+在 HTML 中，某些字符是预留的，这些预留字符必须被替换为字符实体\footnote{实体名称对大小写敏感！}，比如，在 HTML 中不能使用小于号（<）和大于号（>），这是因为浏览器会误认为它们是标签\footnote{使用实体名而不是数字的好处是，名称易于记忆。不过坏处是，浏览器也许并不支持所有实体名称（对实体数字的支持却很好）。}。
+
+如果希望正确地显示预留字符，用户必须在 HTML 源代码中使用字符实体（character entities）。字符实体类似这样：
+
+\begin{lstlisting}[language=HTML]
+  &entity_name;
+  或者
+  &#entity_number;
+\end{lstlisting}
+
+如需显示小于号，我们必须这样写：\&lt; 或 \&\#60;
+
+HTML 中的常用字符实体是不间断空格（non-breaking space，\&nbsp;），浏览器总是会截短 HTML 页面中的空格。如果用户在文本中写 10 个空格，在显示该页面之前，浏览器会删除它们中的 9 个。如需在页面中增加空格的数量，用户就需要使用 \&nbsp; 字符实体。
+
+\begin{table}[!h]
+\centering
+\caption{HTML字符实体}
+\begin{tabular}{|l|l|l|l|}
+\hline
+显示结果		&描述		&实体名称	&实体编号	\\
+\hline
+ 			&空格		&\&nbsp;		&\&\#160;	\\
+\hline
+<			&小于号		&\&lt;		&\&\#60;	\\
+\hline
+>			&大于号		&\&gt;		&\&\#62;	\\
+\hline
+\&			&和号		&\&amp;		&\&\#38;\\
+\hline
+"			&引号		&\&quot;		&\&\#34;\\
+\hline
+'			&撇号 		&\&apos; (IE不支持)&\&\#39;\\
+\hline
+￠			&分			&\&cent;		&\&\#162;\\
+\hline
+£			&镑			&\&pound;	&\&\#163;\\
+\hline
+¥			&日圆		&\&yen;		&\&\#165;\\
+\hline
+€			&欧元		&\&euro;		&\&\#8364;\\
+\hline
+§			&小节		&\&sect;		&\&\#167;\\
+\hline
+©			&版权		&\&copy;		&\&\#169;\\
+\hline
+®			&注册商标	&\&reg;		&\&\#174;\\
+\hline
+™			&商标		&\&trade;	&\&\#8482;\\
+\hline
+×			&乘号		&\&times;	&\&\#215;\\
+\hline
+÷			&除号		&\&divide;	&\&\#247;\\
+\hline
+\end{tabular}
+\end{table}
+
+
+HTML4.01字符实体参考手册包括了数学符号、希腊字符、各种箭头记号、科技符号以及形状。
+
+\begin{longtable}{|l|l|l|l|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+\caption{HTML 支持的数学符号}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\tabularnewline\hline
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+\endlastfoot
+\hline
+∀	&for all				&\&forall;		&\&\#8704;\\
+\hline
+∂	&part				&\&part;		&\&\#8706;\\
+\hline
+∃	&exists				&\&exists;	&\&\#8707;\\
+\hline
+∅	&empty				&\&empty;	&\&\#8709;\\
+\hline
+∇	&nabla				&\&nabla;		&\&\#8711;\\
+\hline
+∈	&isin				&\&isin;		&\&\#8712;\\
+\hline
+∉	&notin				&\&notin;		&\&\#8713;\\
+\hline
+∋	&ni					&\&ni;		&\&\#8715;\\
+\hline
+∏	&prod				&\&prod;		&\&\#8719;\\
+\hline
+∑	&sum				&\&sum;		&\&\#8721;\\
+\hline
+−	&minus				&\&minus;		&\&\#8722;\\
+\hline
+∗	&lowast				&\&lowast;	&\&\#8727;\\
+\hline
+√	&square root			&\&radic;		&\&\#8730;\\
+\hline
+∝	&proportional to		&\&prop;		&\&\#8733;\\
+\hline
+∞	&infinity				&\&infin;		&\&\#8734;\\
+\hline
+∠	&angle				&\&ang;		&\&\#8736;\\
+\hline
+∧	&and				&\&and;		&\&\#8743;\\
+\hline
+∨	&or					&\&or;		&\&\#8744;\\
+\hline
+∩	&cap				&\&cap;		&\&\#8745;\\
+\hline
+∪	&cup				&\&cup;		&\&\#8746;\\
+\hline
+∫	&integral				&\&int;		&\&\#8747;\\
+\hline
+∴	&therefore			&\&there4;	&\&\#8756;\\
+\hline
+∼	&simular to			&\&sim;		&\&\#8764;\\
+\hline
+≅	&approximately equal	&\&cong;		&\&\#8773;\\
+\hline
+≈	&almost equal			&\&asymp;	&\&\#8776;\\
+\hline
+≠	&not equal			&\&ne;		&\&\#8800;\\
+\hline
+≡	&equivalent			&\&equiv;		&\&\#8801;\\
+\hline
+≤	&less or equal		&\&le;		&\&\#8804;\\
+\hline
+≥	&greater or equal		&\&ge;		&\&\#8805;\\
+\hline
+⊂	&subset of			&\&sub;		&\&\#8834;\\
+\hline
+⊃	&superset of			&\&sup;		&\&\#8835;\\
+\hline
+⊄	&not subset of		&\&nsub;		&\&\#8836;\\
+\hline
+⊆	&subset or equal		&\&sube;		&\&\#8838;\\
+\hline
+⊇	&superset or equal		&\&supe;		&\&\#8839;\\
+\hline
+⊕	&circled plus			&\&oplus;		&\&\#8853;\\
+\hline
+⊗	&cirled times			&\&otimes;	&\&\#8855;\\
+\hline
+⊥	&perpendicular		&\&perp;		&\&\#8869;\\
+\hline
+⋅	&dot operator			&\&sdot;		&\&\#8901;\\
+\hline
+\end{longtable}
+
+
+\begin{longtable}{|l|l|l|l|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+\caption{HTML 支持的希腊字母}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\tabularnewline\hline
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+\endlastfoot
+\hline
+Α	&Alpha	&\&Alpha;	&\&\#913;\\
+\hline
+Β	&Beta	&\&Beta;		&\&\#914;\\
+\hline
+Γ	&Gamma	&\&Gamma;	&\&\#915;\\
+\hline
+Δ	&Delta	&\&Delta;	&\&\#916;\\
+\hline
+Ε	&Epsilon	&\&Epsilon;	&\&\#917;\\
+\hline
+Ζ	&Zeta	&\&Zeta;		&\&\#918;\\
+\hline
+Η	&Eta	&\&Eta;		&\&\#919;\\
+\hline
+Θ	&Theta	&\&Theta;	&\&\#920;\\
+\hline
+Ι	&Iota	&\&Iota;		&\&\#921;\\
+\hline
+Κ	&Kappa	&\&Kappa;	&\&\#922;\\
+\hline
+Λ	&Lambda	&\&Lambda;	&\&\#923;\\
+\hline
+Μ	&Mu		&\&Mu;		&\&\#924;\\
+\hline
+Ν	&Nu		&\&Nu;		&\&\#925;\\
+\hline
+Ξ	&Xi		&\&Xi;		&\&\#926;\\
+\hline
+Ο	&Omicron&\&Omicron;	&\&\#927;\\
+\hline
+Π	&Pi		&\&Pi;		&\&\#928;\\
+\hline
+Ρ	&Rho	&\&Rho;		&\&\#929;\\
+\hline
+ 	&Sigmaf	& 			&undefined\\
+\hline
+Σ	&Sigma	&\&Sigma;	&\&\#931;\\
+\hline
+Τ	&Tau	&\&Tau;		&\&\#932;\\
+\hline
+Υ	&Upsilon	&\&Upsilon;	&\&\#933;\\
+\hline
+Φ	&Phi		&\&Phi;		&\&\#934;\\
+\hline
+Χ	&Chi	&\&Chi;		&\&\#935;\\
+\hline
+Ψ	&Psi		&\&Psi;		&\&\#936;\\
+\hline
+Ω	&Omega	&\&Omega;	&\&\#937;\\
+\hline
+ \multicolumn{4}{|l|}{}				\\
+\hline
+α	&alpha	&\&alpha;	&\&\#945;\\
+\hline
+β	&beta	&\&beta;		&\&\#946;\\
+\hline
+γ	&gamma	&\&gamma;	&\&\#947;\\
+\hline
+δ	&delta	&\&delta;	&\&\#948;\\
+\hline
+ε	&epsilon	&\&epsilon;	&\&\#949;\\
+\hline
+ζ	&zeta	&\&zeta;		&\&\#950;\\
+\hline
+η	&eta	&\&eta;		&\&\#951;\\
+\hline
+θ	&theta	&\&theta;	&\&\#952;\\
+\hline
+ι	&iota	&\&iota;		&\&\#953;\\
+\hline
+κ	&kappa	&\&kappa;	&\&\#954;\\
+\hline
+λ	&lambda	&\&lambda;	&\&\#923;\\
+\hline
+μ	&mu		&\&mu;		&\&\#956;\\
+\hline
+ν	&nu		&\&nu;		&\&\#925;\\
+\hline
+ξ	&xi		&\&xi;		&\&\#958;\\
+\hline
+ο	&omicron	&\&omicron;	&\&\#959;\\
+\hline
+π	&pi		&\&pi;		&\&\#960;\\
+\hline
+ρ	&rho	&\&rho;		&\&\#961;\\
+\hline
+ς	&sigmaf	&\&sigmaf;	&\&\#962;\\
+\hline
+σ	&sigma	&\&sigma;	&\&\#963;\\
+\hline
+τ	&tau	&\&tau;		&\&\#964;\\
+\hline
+υ	&upsilon	&\&upsilon;	&\&\#965;\\
+\hline
+φ	&phi		&\&phi;		&\&\#966;\\
+\hline
+χ	&chi		&\&chi;		&\&\#967;\\
+\hline
+ψ	&psi		&\&psi;		&\&\#968;\\
+\hline
+ω	&omega	&\&omega;	&\&\#969;\\
+\hline
+ \multicolumn{4}{|l|}{}				\\
+\hline
+ϑ	&theta symbol	&\&thetasym;	&\&\#977;\\
+\hline
+ϒ	&upsilon symbol	&\&upsih;	&\&\#978;\\
+\hline
+ϖ	&pi symbol		&\&piv;		&\&\#982;\\
+\hline
+\end{longtable}
+
+
+
+\begin{longtable}{|l|l|l|l|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+\caption{HTML 支持的其他实体}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\tabularnewline\hline
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+\endlastfoot
+\hline
+Œ	&capital ligature OE				&\&OElig;	&\&\#338;\\
+\hline
+œ	&small ligature oe					&\&oelig;		&\&\#339;\\
+\hline
+Š	&capital S with caron				&\&Scaron;	&\&\#352;\\
+\hline
+š	&small S with caron				&\&scaron;	&\&\#353;\\
+\hline
+Ÿ	&capital Y with diaeres				&\&Yuml;		&\&\#376;\\
+\hline
+ƒ	&f with hook						&\&fnof;		&\&\#402;\\
+\hline
+ˆ	&modifier letter circumflex accent		&\&circ;		&\&\#710;\\
+\hline
+˜	&small tilde						&\&tilde;		&\&\#732;\\
+\hline
+ 	&en space						&\&ensp;		&\&\#8194;\\
+\hline
+ 	&em space						&\&emsp;	&\&\#8195;\\
+\hline
+ 	&thin space						&\&thinsp;	&\&\#8201;\\
+\hline
+‌	&zero width non-joiner				&\&zwnj;		&\&\#8204;\\
+\hline
+‍	&zero width joiner					&\&zwj;		&\&\#8205;\\
+\hline
+‎	&left-to-right mark					&\&lrm;		&\&\#8206;\\
+\hline
+	&right-to-left mark					&\&rlm;		&\&\#8207;\\
+\hline
+–	&en dash							&\&ndash;	&\&\#8211;\\
+\hline
+—	&em dash						&\&mdash;	&\&\#8212;\\
+\hline
+‘	&left single quotation mark			&\&lsquo;	&\&\#8216;\\
+\hline
+’	&right single quotation mark			&\&rsquo;	&\&\#8217;\\
+\hline
+‚	&single low-9 quotation mark		&\&sbquo;	&\&\#8218;\\
+\hline
+“	&left double quotation mark			&\&ldquo;	&\&\#8220;\\
+\hline
+”	&right double quotation mark		&\&rdquo;	&\&\#8221;\\
+\hline
+„	&double low-9 quotation mark		&\&bdquo;	&\&\#8222;\\
+\hline
+†	&dagger							&\&dagger;	&\&\#8224;\\
+\hline
+‡	&double dagger					&\&Dagger;	&\&\#8225;\\
+\hline
+•	&bullet							&\&bull;		&\&\#8226;\\
+\hline
+…	&horizontal ellipsis				&\&hellip;	&\&\#8230;\\
+\hline
+‰	&per mille 						&\&permil;	&\&\#8240;\\
+\hline
+′	&minutes							&\&prime;	&\&\#8242;\\
+\hline
+″	&seconds						&\&Prime;	&\&\#8243;\\
+\hline
+‹	&single left angle quotation			&\&lsaquo;	&\&\#8249;\\
+\hline
+›	&single right angle quotation			&\&rsaquo;	&\&\#8250;\\
+\hline
+‾	&overline						&\&oline;		&\&\#8254;\\
+\hline
+€	&euro							&\&euro;		&\&\#8364;\\
+\hline
+™	&trademark						&\&trade;	&\&\#8482;\\
+\hline
+←	&left arrow						&\&larr;		&\&\#8592;\\
+\hline
+↑	&up arrow						&\&uarr;		&\&\#8593;\\
+\hline
+→	&right arrow						&\&rarr;		&\&\#8594;\\
+\hline
+↓	&down arrow						&\&darr;		&\&\#8595;\\
+\hline
+↔	&left right arrow					&\&harr;		&\&\#8596;\\
+\hline
+↵	&carriage return arrow				&\&crarr;		&\&\#8629;\\
+\hline
+⌈	&left ceiling						&\&lceil;		&\&\#8968;\\
+\hline
+⌉	&right ceiling						&\&rceil;		&\&\#8969;\\
+\hline
+⌊	&left floor						&\&lfloor;	&\&\#8970;\\
+\hline
+⌋	&right floor						&\&rfloor;	&\&\#8971;\\
+\hline
+◊	&lozenge						&\&loz;		&\&\#9674;\\
+\hline
+♠	&spade							&\&spades;	&\&\#9824;\\
+\hline
+♣	&club							&\&clubs;	&\&\#9827;\\
+\hline
+♥	&heart							&\&hearts;	&\&\#9829;\\
+\hline
+♦	&diamond						&\&diams;	&\&\#9830;\\
+\hline
+
+\end{longtable}
+
+\section{HTML ISO-8859-1 Reference}
+
+HTML 4.01 支持 ISO 8859-1 (Latin-1)字符集。
+
+\begin{compactitem}
+\item ISO-8859-1 的较低部分（从 1 到 127 之间的代码）是最初的 7 比特 ASCII。
+\item ISO-8859-1 的较高部分（从 160 到 255 之间的代码）全都有实体名称。
+\end{compactitem}
+
+这些符号中的大多数都可以在不进行实体引用的情况下使用，但是实体名称\footnote{实体名称对大小写敏感。}或实体编号为那些不容易通过键盘键入的符号提供了表达的方法。
+
+
+\begin{longtable}{|l|l|l|l|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+\caption{带有实体名称的 ASCII 实体}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\tabularnewline\hline
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+
+\endlastfoot
+\hline
+"		&quotation mark		&\&quot;		&\&\#34;	\\
+\hline
+'		&apostrophe 			&\&apos;		&\&\#39;\\
+\hline
+\&		&ampersand			&\&amp;		&\&\#38;\\
+\hline
+<		&less-than			&\&lt;		&\&\#60;\\
+\hline
+>		&greater-than			&\&gt;		&\&\#62;\\
+\hline
+\end{longtable}
+
+
+ISO 字符集是国际标准组织 (ISO) 针对不同的字母表/语言定义的标准字符集，下面列出了世界各地使用的不同字符集：
+
+\begin{longtable}{|p{65pt}|p{90pt}|p{220pt}|}
+%head
+\multicolumn{3}{r}{...}
+\tabularnewline\hline
+字符集	&描述	&使用范围
+\endhead
+%head
+
+%firsthead
+\caption{ISO 字符集}\\
+\hline
+字符集	&描述	&使用范围
+\endfirsthead
+%firsthead
+
+%foot
+\multicolumn{3}{r}{...}
+\endfoot
+%foot
+
+
+%lastfoot
+\endlastfoot
+%lastfoot
+\hline
+ISO-8859-1	&Latin alphabet part 1	&北美、西欧、拉丁美洲、加勒比海、加拿大、非洲\\
+\hline
+ISO-8859-2	&Latin alphabet part 2	&东欧\\
+\hline
+ISO-8859-3	&Latin alphabet part 3	&SE Europe、世界语、其他杂项\\
+\hline
+ISO-8859-4	&Latin alphabet part 4	&斯堪的纳维亚/波罗的海（以及其他没有包括在 ISO-8859-1 中的部分）\\
+\hline
+ISO-8859-5	&Latin/Cyrillic part 5	&使用古代斯拉夫语字母表的语言，比如保加利亚语、白俄罗斯文、俄罗斯语、马其顿语\\
+\hline
+ISO-8859-6	&Latin/Arabic part 6	&使用阿拉伯字母的语言\\
+\hline
+ISO-8859-7	&Latin/Greek part 7	&现代希腊语，以及有希腊语衍生的数学符号\\
+\hline
+ISO-8859-8	&Latin/Hebrew part 8	&使用希伯来语的语言\\
+\hline
+ISO-8859-9	&Latin 5 part 9		&土耳其语\\
+\hline
+ISO-8859-10	&Latin 6				&拉普兰语、日耳曼语、爱斯基摩北欧语\\
+\hline
+ISO-8859-15	&Latin 9 (aka Latin 0)	&与 ISO 8859-1 类似，欧元符号和其他一些字符取代了一些较少使用的符号\\
+\hline
+ISO-2022-JP	&Latin/Japanese part 1	&日本语\\
+\hline
+ISO-2022-JP-2&	Latin/Japanese part 2&	日本语\\
+\hline
+ISO-2022-KR	&Latin/Korean part 1	&韩语\\
+\hline
+\end{longtable}
+
+
+\begin{longtable}{|p{60pt}|p{120pt}|p{60pt}|p{60pt}|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+
+
+\caption{ISO 8859-1 符号实体}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+
+\endlastfoot
+
+\hline
+		&non-breaking space		&\&nbsp;		&\&\#160;\\
+\hline
+¡		&inverted exclamation mark	&\&iexcl;		&\&\#161;\\
+\hline
+¢		& cent					&\&cent;		&\&\#162;\\
+\hline
+£		&pound					&\&pound;	&\&\#163;\\
+\hline
+¤		&currency				&\&curren;	&\&\#164;\\
+\hline
+¥		&yen					&\&yen;		&\&\#165;\\
+\hline
+¦		&broken vertical bar		&\&brvbar;	&\&\#166;\\
+\hline
+§		&section					&\&sect;		&\&\#167;\\
+\hline
+¨		&spacing diaeresis			&\&uml;		&\&\#168;\\
+\hline
+©		&copyright				&\&copy;		&\&\#169;\\
+\hline
+ª		&feminine ordinal indicator	&\&ordf;		&\&\#170;\\
+\hline
+«		&angle quotation mark (left)	&\&laquo;	&\&\#171;\\
+\hline
+¬		&negation				&\&not;		&\&\#172;\\
+\hline
+soft 		&hyphen					&\&shy;		&\&\#173;\\
+\hline
+®		&registered trademark		&\&reg;		&\&\#174;\\
+\hline
+¯		&spacing macron			&\&macr;		&\&\#175;\\
+\hline
+°		&degree					&\&deg;		&\&\#176;\\
+\hline
+±		&plus-or-minus 			&\&plusmn;	&\&\#177;\\
+\hline
+²		&superscript 2			&\&sup2;		&\&\#178;\\
+\hline
+³		&superscript 3			&\&sup3;		&\&\#179;\\
+\hline
+´		&spacing acute			&\&acute;	&\&\#180;\\
+\hline
+µ		&micro					&\&micro;	&\&\#181;\\
+\hline
+¶		&paragraph				&\&para;		&\&\#182;\\
+\hline
+·		&middle dot				&\&middot;	&\&\#183;\\
+\hline
+¸		&spacing cedilla			&\&cedil;		&\&\#184;\\
+\hline
+¹		&superscript 1			&\&sup1;		&\&\#185;\\
+\hline
+º		&masculine ordinal indicator	&\&ordm;	&\&\#186;\\
+\hline
+»		&angle quotation mark (right)&\&raquo;	&\&\#187;\\
+\hline
+¼		&fraction 1/4				&\&frac14;	&\&\#188;\\
+\hline
+½		&fraction 1/2				&\&frac12;	&\&\#189;\\
+\hline
+¾		&fraction 3/4				&\&frac34;	&\&\#190;\\
+\hline
+¿		&inverted question mark	&\&iquest;	&\&\#191;\\
+\hline
+×		&multiplication			&\&times;	&\&\#215;\\
+\hline
+÷		&division					&\&divide;	&\&\#247;\\
+\hline
+
+\end{longtable}
+
+
+\begin{longtable}{|p{60pt}|p{120pt}|p{60pt}|p{60pt}|}
+\multicolumn{4}{r}{...}
+\tabularnewline\hline
+结果		&描述	&实体名称	&实体编号
+\endhead
+
+
+\caption{ISO 8859-1 字符实体}\\
+\hline
+结果		&描述	&实体名称	&实体编号
+\endfirsthead
+
+\multicolumn{4}{r}{...}
+\endfoot
+
+
+\endlastfoot
+
+\hline
+À	&capital a, grave accent			&\&Agrave;	&\&\#192;\\
+\hline
+Á	&capital a, acute accent			&\&Aacute;	&\&\#193;\\
+\hline
+Â	&capital a, circumflex accent		&\&Acirc;		&\&\#194;\\
+\hline
+Ã	&capital a, tilde				&\&Atilde;	&\&\#195;\\
+\hline
+Ä	&capital a, umlaut mark			&\&Auml;	&\&\#196;\\
+\hline
+Å	&capital a, ring				&\&Aring;	&\&\#197;\\
+\hline
+Æ	&capital ae					&\&AElig;	&\&\#198;\\
+\hline
+Ç	&capital c, cedilla				&\&Ccedil;	&\&\#199;\\
+\hline
+È	&capital e, grave accent			&\&Egrave;	&\&\#200;\\
+\hline
+É	&capital e, acute accent			&\&Eacute;	&\&\#201;\\
+\hline
+Ê	&capital e, circumflex accent		&\&Ecirc;		&\&\#202;\\
+\hline
+Ë	&capital e, umlaut mark			&\&Euml;		&\&\#203;\\
+\hline
+Ì	&capital i, grave accent			&\&Igrave;	&\&\#204;\\
+\hline
+Í	&capital i, acute accent			&\&Iacute;	&\&\#205;\\
+\hline
+Î	&capital i, circumflex accent		&\&Icirc;		&\&\#206;\\
+\hline
+Ï	&capital i, umlaut mark			&\&Iuml;		&\&\#207;\\
+\hline
+Ð	&capital eth, Icelandic			&\&ETH;		&\&\#208;\\
+\hline
+Ñ	&capital n, tilde				&\&Ntilde;	&\&\#209;\\
+\hline
+Ò	&capital o, grave accent			&\&Ograve;	&\&\#210;\\
+\hline
+Ó	&capital o, acute accent			&\&Oacute;	&\&\#211;\\
+\hline
+Ô	&capital o, circumflex accent		&\&Ocirc;	&\&\#212;\\
+\hline
+Õ	&capital o, tilde				&\&Otilde;	&\&\#213;\\
+\hline
+Ö	&capital o, umlaut mark			&\&Ouml;	&\&\#214;\\
+\hline
+Ø	&capital o, slash				&\&Oslash;	&\&\#216;\\
+\hline
+Ù	&capital u, grave accent			&\&Ugrave;	&\&\#217;\\
+\hline
+Ú	&capital u, acute accent			&\&Uacute;	&\&\#218;\\
+\hline
+Û	&capital u, circumflex accent		&\&Ucirc;	&\&\#219;\\
+\hline
+Ü	&capital u, umlaut mark			&\&Uuml;	&\&\#220;\\
+\hline
+Ý	&capital y, acute accent			&\&Yacute;	&\&\#221;\\
+\hline
+Þ	&capital THORN, Icelandic		&\&THORN;	&\&\#222;\\
+\hline
+ß	&small sharp s, German			&\&szlig;		&\&\#223;\\
+\hline
+à	&small a, grave accent			&\&agrave;	&\&\#224;\\
+\hline
+á	&small a, acute accent			&\&aacute;	&\&\#225;\\
+\hline
+â	&small a, circumflex accent		&\&acirc;		&\&\#226;\\
+\hline
+ã	&small a, tilde					&\&atilde;	&\&\#227;\\
+\hline
+ä	&small a, umlaut mark			&\&auml;		&\&\#228;\\
+\hline
+å	&small a, ring					&\&aring;		&\&\#229;\\
+\hline
+æ	&small ae					&\&aelig;		&\&\#230;\\
+\hline
+ç	&small c, cedilla				&\&ccedil;	&\&\#231;\\
+\hline
+è	&small e, grave accent			&\&egrave;	&\&\#232;\\
+\hline
+é	&small e, acute accent			&\&eacute;	&\&\#233;\\
+\hline
+ê	&small e, circumflex accent		&\&ecirc;		&\&\#234;\\
+\hline
+ë	&small e, umlaut mark			&\&euml;		&\&\#235;\\
+\hline
+ì	&small i, grave accent			&\&igrave;	&\&\#236;\\
+\hline
+í	&small i, acute accent			&\&iacute;	&\&\#237;\\
+\hline
+î	&small i, circumflex accent		&\&icirc;		&\&\#238;\\
+\hline
+ï	&small i, umlaut mark			&\&iuml;		&\&\#239;\\
+\hline
+ð	&small eth, Icelandic			&\&eth;		&\&\#240;\\
+\hline
+ñ	&small n, tilde				&\&ntilde;	&\&\#241;\\
+\hline
+ò	&small o, grave accent			&\&ograve;	&\&\#242;\\
+\hline
+ó	&small o, acute accent			&\&oacute;	&\&\#243;\\
+\hline
+ô	&small o, circumflex accent		&\&ocirc;		&\&\#244;\\
+\hline
+õ	&small o, tilde				&\&otilde;	&\&\#245;\\
+\hline
+ö	&small o, umlaut mark			&\&ouml;		&\&\#246;\\
+\hline
+ø	&small o, slash				&\&oslash;	&\&\#248;\\
+\hline
+ù	&small u, grave accent			&\&ugrave;	&\&\#249;\\
+\hline
+ú	&small u, acute accent			&\&uacute;	&\&\#250;\\
+\hline
+û	&small u, circumflex accent		&\&ucirc;		&\&\#251;\\
+\hline
+ü	&small u, umlaut mark			&\&uuml;		&\&\#252;\\
+\hline
+ý	&small y, acute accent			&\&yacute;	&\&\#253;\\
+\hline
+þ	&small thorn, Icelandic			&\&thorn;	&\&\#254;\\
+\hline
+ÿ	&small y, umlaut mark			&\&yuml;		&\&\#255;\\
+\hline
+\end{longtable}
+
+由于上面列出的字符集都有容量限制，而且不兼容多语言环境，Unicode 联盟开发了 Unicode 标准，Unicode 标准涵盖了世界上的所有字符、标点和符号\footnote{最前面的 256 个 Unicode 字符集字符对应于 256 个 ISO-8859-1 字符。}。
+
+Unicode 联盟的目标是用标准的 Unicode 转换格式 (UTF) 来取代现有的字符集。不论是何种平台、程序或语言，Unicode 都能够进行文本数据的处理、存储和交换。
+
+Unicode 标准已经获得了成功，在 XML、Java、ECMAScript (JavaScript)、LDAP、CORBA 3.0、WML 中，Unicode 已经得到了实现。在许多操作系统以及所有的现代浏览器中，Unicode 同样得到了支持。
+
+Unicode 联盟与领导性的标准发展组织进行合作，比如 ISO、W3C 以及 ECMA。
+
+Unicode 可以被不同的字符集兼容。最常用的编码方式是 UTF-8 和 UTF-16\footnote{所有 HTML 4 处理器均已支持 UTF-8，而所有 XHTML 和 XML 处理器支持 UTF-8 和 UTF-16。}：
+
+\begin{compactitem}
+\item UTF-8
+UTF8 中的字符可以是 1-4 个字节长。UTF-8 可以表示 Unicode 标准中的任意字符。UTF-8 向后兼容 ASCII。UTF-8 是网页和电子邮件的首选编码。
+\item UTF-16
+16 比特的 Unicode 转换格式是一种 Unicode 可变字符编码，能够对全部 Unicode 指令表进行编码。UTF-16 主要被用于操作系统和环境中，比如微软的 Windows 2000/XP/2003/Vista/CE 以及 Java 和 .NET 字节代码环境。
+\end{compactitem}
+
+
+\section{HTML URL Encode Reference}
+
+下面是用 URL 编码形式表示的 ASCII 字符（十六进制格式）。
+
+十六进制格式用于在浏览器和插件中显示非标准的字母和字符。
+
+
+
+\begin{longtable}{|l|l|l|l|l|l|}
+%\caption{URL 编码 - 从 \%00 到 \%8f}
+\multicolumn{6}{r}{...}
+\tabularnewline\hline
+ASCII Value&URL-encode&ASCII Value&URL-encode&ASCII Value&URL-encode				
+\endhead
+\hline
+ASCII Value&URL-encode&ASCII Value&URL-encode&ASCII Value&URL-encode		
+\tabularnewline\hline
+\endfirsthead
+\multicolumn{6}{r}{...}
+\endfoot
+%\tabularnewline\hline
+\endlastfoot
+\hline
+æ			&\%00		&0			&\%30		&`			&\%60		\\
+\hline
+ 			&\%01		&1			&\%31	 	& a			&\%61		\\
+\hline
+ 			&\%02		&2			&\%32 		& b			&\%62		\\
+\hline
+ 			&\%03		&3			&\%33 		& c			&\%63		\\
+\hline
+ 			&\%04		&4			&\%34 		& d			&\%64		\\
+\hline
+ 			&\%05		&5			&\%35	 	& e			&\%65		\\
+\hline
+ 			&\%06		&6			&\%36 		& f			&\%66		\\
+\hline
+ 			&\%07		&7			&\%37		& g			&\%67		\\
+\hline
+backspace	&\%08		&8			&\%38		& h			&\%68		\\
+\hline
+tab			&\%09		&9			&\%39		& i			&\%69		\\
+\hline
+linefeed		&\%0a		&:			&\%3a		& j			&\%6a 		\\
+\hline
+ 			&\%0b		&;			&\%3b		&k			&\%6b 		\\
+\hline
+ 			&\%0c		&<			&\%3c		& l			&\%6c 		\\
+\hline
+c return		&\%0d		&=			&\%3d		& m			&\%6d 		\\
+\hline
+ 			&\%0e		&>			&\%3e		& n			&\%6e 		\\
+\hline
+ 			&\%0f		&?			&\%3f		& o			&\%6f 		\\
+\hline
+ 			&\%10		&@			&\%40		& p			&\%70		\\
+\hline
+ 			&\%11		& A			&\%41		& q			&\%71		\\
+\hline
+ 			&\%12		& B			&\%42		& r			&\%72		\\
+\hline
+ 			&\%13		& C			&\%43		& s			&\%73		\\
+\hline
+ 			&\%14		& D			&\%44		& t			&\%74		\\
+\hline
+ 			&\%15		& E			&\%45		& u			&\%75		\\
+\hline
+ 			&\%16		& F			&\%46		& v			&\%76		\\
+\hline
+ 			&\%17		& G			&\%47		& w			&\%77		\\
+\hline
+ 			&\%18		& H			&\%48		& x			&\%78		\\
+\hline
+ 			&\%19		& I			&\%49		& y			&\%79		\\
+\hline
+ 			&\%1a	 	& J			&\%4a		& z			&\%7a 		\\
+\hline
+ 			&\%1b	 	& K			&\%4b		&\{			&\%7b 		\\
+\hline
+ 			&\%1c		& L			&\%4c		& |			&\%7c 		\\
+\hline
+ 			&\%1d		& M			&\%4d		& \}			&\%7d 		\\
+\hline
+ 			&\%1e		& N			&\%4e		& {\~{}}		&\%7e 		\\
+\hline
+ 			&\%1f 		& O			&\%4f	 	&			&\%7f 		\\
+\hline
+space		&\%20		& P			&\%50		&€			&\%80		\\
+\hline
+!			&\%21		& Q	 		&\%51	 	& 			&\%81		\\
+\hline
+"			&\%22		& R			&\%52		&‚			&\%82		\\
+\hline
+\#			&\%23		& S			&\%53	 	&ƒ			&\%83		\\
+\hline
+\$			&\%24		& T			&\%54		&„			&\%84		\\
+\hline
+\%			&\%25		& U			&\%55		&…			&\%85		\\
+\hline
+\&			&\%26		&V			&\%56		&†			&\%86		\\
+\hline
+'			&\%27		& W			&\%57		&‡			&\%87		\\
+\hline
+(			&\%28		& X			&\%58		&{\^{}}		&\%88		\\
+\hline
+)			&\%29		& Y			&\%59		&‰			&\%89		\\
+\hline
+*			&\%2a		& Z			& \%5a		&Š			&\%8a 		\\
+\hline
++			&\%2b		&[			&\%5b		&‹			&\%8b 		\\
+\hline
+,			&\%2c		&\textbackslash&\%5c		&Œ			&\%8c 		\\
+\hline
+-			&\%2d		&]			&\%5d		& 			&\%8d 		\\
+\hline
+.			&\%2e		&$\wedge$	&\%5e		&Ž			&\%8e 		\\
+\hline
+/			&\%2f		&\_			&\%5f	 	&			&\%8f 		\\
+\hline
+ 			&\%90		& À			&\%c0		&ð			&\%f0		\\
+\hline
+‘			&\%91		& Á			&\%c1		&ñ			&\%f1		\\
+\hline
+’			&\%92		&Â			&\%c2		&ò			&\%f2		\\
+\hline
+“			&\%93		&Ã			&\%c3		&ó			&\%f3		\\
+\hline
+”			&\%94		&Ä			&\%c4		&ô			&\%f4		\\
+\hline
+•			&\%95		&Å			&\%c5		&õ			&\%f5		\\
+\hline
+–			&\%96		&Æ			&\%c6		&ö			&\%f6		\\
+\hline
+—			&\%97		&Ç			&\%c7		&÷			&\%f7		\\
+\hline
+˜			&\%98		&È			&\%c8		&ø			&\%f8		\\
+\hline
+™			&\%99		&É			&\%c9		&ù			&\%f9		\\
+\hline
+š			&\%9a		&Ê			&\%ca		&ú			&\%fa		\\
+\hline
+›			&\%9b		&Ë			&\%cb		&û			&\%fb 		\\
+\hline
+œ			&\%9c		&Ì			&\%cc		&ü			&\%fc 		\\
+\hline
+ 			&\%9d		&Í			&\%cd		&ý			&\%fd		\\
+\hline
+ž			&\%9e		&Î			&\%ce		&þ			&\%fe 		\\
+\hline
+Ÿ			&\%9f		&Ï			&\%cf		&ÿ			&\%ff		\\
+\hline
+ 			&\%a0		&Ð			&\%d0		& 	 		&			\\
+\hline
+¡			&\%a1		&Ñ			&\%d1	 	 &			&			\\
+\hline
+¢			&\%a2		&Ò			&\%d2	 	 &			&			\\
+\hline
+£			&\%a3		&Ó			&\%d3	 	 &			&			\\
+\hline
+ 			&\%a4		&Ô			&\%d4	 	 &			&			\\
+\hline
+¥			&\%a5		&Õ			&\%d5	 	 &			&			\\
+\hline
+|			&\%a6		&Ö			&\%d6	 	 &			&			\\
+\hline
+§			&\%a7		&			&\%d7		&	 	 	&			\\
+\hline
+¨			&\%a8		&Ø			&\%d8	 	 &			&			\\
+\hline
+©			&\%a9		&Ù			&\%d9	 	 &			&			\\
+\hline
+ª			&\%aa		&Ú			&\%da	 	 &			&			\\
+\hline
+«			&\%ab		&Û			&\%db	 	 &			&			\\
+\hline
+¬			&\%ac		&Ü			&\%dc	 	&			&			\\
+\hline	 
+¯			&\%ad		&Ý			&\%dd	 	 &			&			\\
+\hline
+®			&\%ae		&Þ			&\%de		&			&			\\
+\hline 	 
+¯			&\%af		&ß			&\%df	 	 &			&			\\
+\hline
+°			&\%b0		&à			&\%e0		&			&			\\
+hline	 	 
+±			&\%b1		&á			&\%e1	 	 &			&			\\
+\hline
+²			&\%b2		&â			&\%e2	 	 &			&			\\
+\hline
+³			&\%b3		&ã			&\%e3	 	 &			&			\\
+\hline
+´			&\%b4		&ä			&\%e4		&			&			\\
+\hline	 	 
+µ			&\%b5		&å			&\%e5	 	 &			&			\\
+\hline
+¶			&\%b6		&æ			&\%e6		&			&			\\
+\hline	 	 
+·			&\%b7		&ç			&\%e7	 	 &			&			\\
+\hline
+¸			&\%b8		&è			&\%e8		&			&			\\
+\hline	 	 
+¹			&\%b9		&é			&\%e9	 	 &			&			\\
+\hline
+º			&\%ba		&ê			&\%ea	 	 &			&			\\
+\hline
+»			&\%bb		&ë			&\%eb	 	 &			&			\\
+\hline
+¼			&\%bc		&ì			&\%ec	 	 &			&			\\
+\hline
+½			&\%bd		&í			&\%ed		&			&			\\
+\hline 	 
+¾			&\%be		&î			&\%ee		&			&			\\
+\hline	 	 
+¿			&\%bf		&ï			&\%ef		&			&			\\ 	 
+\hline
+\end{longtable}
+
+
+\chapter{HTML lang attribute}
+
+
+HTML 的 lang 属性可用于网页或部分网页的语言。这对搜索引擎和浏览器是有帮助的。
+
+根据 W3C 推荐标准，开发人员应该通过 <html> 标签中的 lang 属性对每张页面中的主要语言进行声明，比如：
+
+\begin{lstlisting}[language=HTML]
+    <html lang="en">
+    ...
+    </html>
+\end{lstlisting}
+
+
+
+在 XHTML 中，采用如下方式在 <html> 标签中对语言进行声明：
+
+\begin{lstlisting}[language=HTML]
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    ...
+    </html>
+\end{lstlisting}
+
+
+
+ISO 639-1 为各种语言定义了缩略词。开发人员可以在 HTML 和 XHTML 中的 lang 和 xml:lang 属性中使用它们。
+
+
+\begin{longtable}{|l|l|}
+
+%head
+\multicolumn{2}{r}{...}
+\tabularnewline\hline
+Language		&ISO Code
+\endhead
+
+%firsthead
+\caption{ISO 639-1 语言代码}\\
+\hline
+Language		&ISO Code		
+\endfirsthead
+
+%foot
+\multicolumn{2}{r}{...}
+\endfoot
+
+%lastfoot
+\endlastfoot
+\hline
+Abkhazian			&ab\\
+\hline
+Afar					&aa\\
+\hline
+Afrikaans				&af\\
+\hline
+Albanian				& sq\\
+\hline
+Amharic				&am\\
+\hline
+Arabic				&ar\\
+\hline
+Armenian				&hy\\
+\hline
+Assamese			&as\\
+\hline
+Aymara				&ay\\
+\hline
+Azerbaijani			&az\\
+\hline
+Bashkir				& ba\\
+\hline
+Basque				&eu\\
+\hline
+Bengali (Bangla)		&bn\\
+\hline
+Bhutani				&dz\\
+\hline
+Bihari				&bh\\
+\hline
+Bislama				& bi\\
+\hline
+Breton				&br\\
+\hline
+Bulgarian				& bg\\
+\hline
+Burmese				&my\\
+\hline
+Byelorussian (Belarusian)	&be\\
+\hline
+Cambodian			&km\\
+\hline
+Catalan				&ca\\
+\hline
+Cherokee	 			&\\
+\hline
+Chewa	 			&\\
+\hline
+Chinese (Simplified)	&zh\\
+\hline
+Chinese (Traditional)	&zh\\
+\hline
+Corsican				&co\\
+\hline
+Croatian				&hr\\
+\hline
+Czech				&cs\\
+\hline
+Danish				&da\\
+\hline
+Divehi				& \\
+\hline
+Dutch				&nl\\
+\hline
+Edo	 				&\\
+\hline
+English				&en\\
+\hline
+Esperanto			&eo\\
+\hline
+Estonian				&et\\
+\hline
+Faeroese				&fo\\
+\hline
+Farsi	fa				&\\
+\hline
+Fiji					&fj\\
+\hline
+Finnish				&fi\\
+\hline
+Flemish				& \\
+\hline
+French				&fr\\
+\hline
+Frisian				&fy\\
+\hline
+Fulfulde				& \\
+\hline
+Galician				&gl\\
+\hline
+Gaelic (Scottish)		&gd\\
+\hline
+Gaelic (Manx)			&gv\\
+\hline
+Georgian				&ka\\
+\hline
+German				&de\\
+\hline
+Greek				&el\\
+\hline
+Greenlandic			&kl\\
+\hline
+Guarani				&gn\\
+\hline
+Gujarati				&gu\\
+\hline
+Hausa				&ha\\
+\hline
+Hawaiian				& \\
+\hline
+Hebrew				&he, iw\\
+\hline
+Hindi				&hi\\
+\hline
+Hungarian			&hu\\
+\hline
+Ibibio				 &\\
+\hline
+Icelandic				&is\\
+\hline
+Igbo	 				&\\
+\hline
+Indonesian			&id, in\\
+\hline
+Interlingua			&ia\\
+\hline
+Interlingue			&ie\\
+\hline
+Inuktitut				&iu\\
+\hline
+Inupiak				&ik\\
+\hline
+Irish					&ga\\
+\hline
+Italian				&it\\
+\hline
+Japanese				&ja\\
+\hline
+Javanese				&jv\\
+\hline
+Kannada				&kn\\
+\hline
+Kanuri				& \\
+\hline
+Kashmiri				&ks\\
+\hline
+Kazakh				&kk\\
+\hline
+Kinyarwanda (Ruanda)	&rw\\
+\hline
+Kirghiz				&ky\\
+\hline
+Kirundi (Rundi)			&	rn\\
+\hline
+Konkani	 			&\\
+\hline
+Korean				&	ko\\
+\hline
+Kurdish				&ku\\
+\hline
+Laothian				&lo\\
+\hline
+Latin				&la\\
+\hline
+Latvian (Lettish)		&lv\\
+\hline
+Limburgish ( Limburger)	&	li\\
+\hline
+Lingala				&ln\\
+\hline
+Lithuanian			&	lt\\
+\hline
+Macedonian			&mk\\
+\hline
+Malagasy				&mg\\
+\hline
+Malay				&ms\\
+\hline
+Malayalam			&	ml\\
+\hline
+Maltese				&mt\\
+\hline
+Maori				&mi\\
+\hline
+Marathi				&mr\\
+\hline
+Moldavian			&	mo\\
+\hline
+Mongolian			&	mn\\
+\hline
+Nauru				&na\\
+\hline
+Nepali				&ne\\
+\hline
+Norwegian			&no\\
+\hline
+Occitan				&oc\\
+\hline
+Oriya				&or\\
+\hline
+Oromo (Afan, Galla)	&om\\
+\hline
+Papiamentu			 &\\
+\hline
+Pashto (Pushto)		&ps\\
+\hline
+Polish				&pl\\
+\hline
+Portuguese			&	pt\\
+\hline
+Punjabi				&pa\\
+\hline
+Quechua				&qu\\
+\hline
+Rhaeto-Romance		&rm\\
+\hline
+Romanian				&ro\\
+\hline
+Russian				&ru\\
+\hline
+Sami (Lappish)	 		&\\
+\hline
+Samoan				&sm\\
+\hline
+Sangro				&sg\\
+\hline
+Sanskrit				&sa\\
+\hline
+Serbian				&sr\\
+\hline
+Serbo-Croatian		&	sh\\
+\hline
+Sesotho				&st\\
+\hline
+Setswana			&	tn\\
+\hline
+Shona				&sn\\
+\hline
+Sindhi				&sd\\
+\hline
+Sinhalese				&si\\
+\hline
+Siswati				&ss\\
+\hline
+Slovak				&sk\\
+\hline
+Slovenian				&sl \\
+\hline
+Somali				&so\\
+\hline
+Spanish				&es\\
+\hline
+Sundanese			&	su\\
+\hline
+Swahili (Kiswahili)		&	sw\\
+\hline
+Swedish				&sv\\
+\hline
+Syriac				& \\
+\hline
+Tagalog				&tl\\
+\hline
+Tajik					&tg\\
+\hline
+Tamazight			& \\
+\hline
+Tamil				&ta\\
+\hline
+Tatar				&tt\\
+\hline
+Telugu				&te\\
+\hline
+Thai					&th\\
+\hline
+Tibetan				&bo\\
+\hline
+Tigrinya				&ti\\
+\hline
+Tonga				&to\\
+\hline
+Tsonga				&ts\\
+\hline
+Turkish				&tr\\
+\hline
+Turkmen				&tk\\
+\hline
+Twi					&tw\\
+\hline
+Uighur				&		ug\\
+\hline
+Ukrainian				&uk\\
+\hline
+Urdu				&ur\\
+\hline
+Uzbek				&uz\\
+\hline
+Venda				& \\
+\hline
+Vietnamese			&vi\\
+\hline
+Volapuk				&vo\\
+\hline
+Welsh				&cy\\
+\hline
+Wolof				&wo\\
+\hline
+Xhosa				&xh\\
+\hline
+Yi	 				&\\
+\hline
+Yiddish				&yi, ji\\
+\hline
+Yoruba				&yo\\
+\hline
+Zulu					&zu\\
+\hline
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{HTML4.01 Quick Reference}
+
+
+
+\section{HTML Basic Document}
+
+\begin{lstlisting}[language=HTML]
+<html>
+<head>
+<title>Document name goes here</title>
+</head>
+<body>
+Visible text goes here
+</body>
+</html>
+\end{lstlisting}
+
+\section{Text Elements}
+
+\begin{lstlisting}[language=HTML]
+<p>This is a paragraph</p>
+<br> (line break)
+<hr> (horizontal rule)
+<pre>This text is preformatted</pre>
+\end{lstlisting}
+
+\section{Logical Styles}
+
+\begin{lstlisting}[language=HTML]
+<em>This text is emphasized</em>
+<strong>This text is strong</strong>
+<code>This is some computer code</code>
+\end{lstlisting}
+
+
+\section{Physical Styles}
+
+\begin{lstlisting}[language=HTML]
+<b>This text is bold</b>
+<i>This text is italic</i>
+\end{lstlisting}
+
+
+\section{Links, Anchors, and Image Elements}
+
+
+\begin{lstlisting}[language=HTML]
+<a href="http://www.example.com/">This is a Link</a>
+<a href="http://www.example.com/"><img src="URL"
+alt="Alternate Text"></a>
+<a href="mailto:webmaster@example.com">Send e-mail</a>A named anchor:
+<a name="tips">Useful Tips Section</a>
+<a href="#tips">Jump to the Useful Tips Section</a>
+\end{lstlisting}
+
+
+\section{Unordered list}
+
+\begin{lstlisting}[language=HTML]
+<ul>
+<li>First item</li>
+<li>Next item</li>
+</ul>
+\end{lstlisting}
+
+\section{Ordered list}
+
+
+\begin{lstlisting}[language=HTML]
+<ol>
+<li>First item</li>
+<li>Next item</li>
+</ol>
+\end{lstlisting}
+
+\section{Definition list}
+
+\begin{lstlisting}[language=HTML]
+<dl>
+<dt>First term</dt>
+<dd>Definition</dd>
+<dt>Next term</dt>
+<dd>Definition</dd>
+</dl>
+\end{lstlisting}
+
+\section{Tables}
+
+\begin{lstlisting}[language=HTML]
+<table border="1">
+<tr>
+  <th>someheader</th>
+  <th>someheader</th>
+</tr>
+<tr>
+  <td>sometext</td>
+  <td>sometext</td>
+</tr>
+</table>
+\end{lstlisting}
+
+
+\section{Frames}
+
+\begin{lstlisting}[language=HTML]
+<frameset cols="25%,75%">
+  <frame src="page1.htm">
+  <frame src="page2.htm">
+</frameset>
+\end{lstlisting}
+
+
+\section{Forms}
+
+
+\begin{lstlisting}[language=HTML]
+<form action="http://www.example.com/test.asp" method="post/get">
+<input type="text" name="lastname"
+value="Nixon" size="30" maxlength="50">
+<input type="password">
+<input type="checkbox" checked="checked">
+<input type="radio" checked="checked">
+<input type="submit">
+<input type="reset">
+<input type="hidden">
+<select>
+<option>Apples
+<option selected>Bananas
+<option>Cherries
+</select>
+<textarea name="Comment" rows="60"
+cols="20"></textarea>
+</form>
+\end{lstlisting}
+
+\section{Entities}
+
+\begin{lstlisting}[language=HTML]
+&lt; is the same as <
+&gt; is the same as >
+&#169; is the same as ©
+\end{lstlisting}
+
+\section{Other Elements}
+
+
+\begin{lstlisting}[language=HTML]
+<!-- This is a comment -->
+<blockquote>
+Text quoted from some source.
+</blockquote>
+<address>
+Address 1<br>
+Address 2<br>
+City<br>
+</address>
+\end{lstlisting}
 
 
 
